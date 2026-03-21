@@ -8,18 +8,19 @@ import java.util.*;
 
 public class NobleLoader {
 
+    private List<Noble> allNobles = new ArrayList<>();        // all 10 nobles loaded from CSV
+    private List<Noble> availNobles = new ArrayList<>();      // nobles currently avail to draw
+    private List<Noble> drawnNobles = new ArrayList<>();       // nobles that have been drawn
+
     /**
-     * Loads noble tiles from a CSV file.
+     * Loads all noble tiles from CSV and prepares a shuffled list.
      * CSV format: prestige_points,ruby,emerald,sapphire,diamond,onyx
      *
-     * @param csvPath path to the CSV file
-     * @return list of Noble objects parsed from the file
-     * @throws FileNotFoundException if the file cannot be found
+     * @throws FileNotFoundException if the CSV file cannot be found
      */
-    public static List<Noble> loadNobles(String csvPath) throws FileNotFoundException {
-        List<Noble> nobles = new ArrayList<>();
+    public NobleLoader() throws FileNotFoundException {
 
-        File file = new File(csvPath);
+        File file = new File("data/nobles.csv");
         Scanner fr = new Scanner(file);
 
         fr.nextLine(); // skip header
@@ -42,10 +43,49 @@ public class NobleLoader {
             requirements.put(GemType.DIAMOND, Integer.parseInt(tokens[4].trim()));
             requirements.put(GemType.ONYX, Integer.parseInt(tokens[5].trim()));
 
-            nobles.add(new Noble(prestigePoints, requirements));
+            allNobles.add(new Noble(prestigePoints, requirements));
         }
 
         fr.close();
-        return nobles;
+
+        // init avail nobles
+        availNobles = allNobles;
+        shuffle();
+    }
+
+    /**
+     * Shuffles the available nobles list.
+     */
+    public void shuffle() {
+        Collections.shuffle(availNobles);
+    }
+
+    /**
+     * Selects numPlayers + 1 nobles for the game.
+     * Must be called after constructor (which already shuffled).
+     *
+     * @param numPlayers number of players in the game
+     */
+    public List<Noble> drawNobles(int numPlayers) {
+        int count = numPlayers + 1;
+        List<Noble> drawn = new ArrayList<>();
+        for (int i = 0; i < count && !availNobles.isEmpty(); i++) {
+            Noble noble = availNobles.remove(0);
+            drawnNobles.add(noble);
+            drawn.add(noble);
+        }
+        return drawn;
+    }
+
+    public List<Noble> getAvailNobles() {
+        return availNobles;
+    }
+
+    public List<Noble> getDrawnNobles() {
+        return drawnNobles;
+    }
+
+    public List<Noble> getAllNobles() {
+        return allNobles;
     }
 }

@@ -6,27 +6,41 @@ import splendor.model.Card;
 import splendor.model.Noble;
 
 // compile with
-// javac -d classes -cp "src" src/splendor/data/LoaderTest.java
+// javac -d classes src/splendor/model/GemType.java src/splendor/model/Card.java src/splendor/model/Noble.java src/splendor/data/CardLoader.java src/splendor/data/NobleLoader.java src/splendor/data/LoaderTest.java
 
 // run with
-// java -cp "classes" splendor.data.LoaderTest
+// java -cp classes splendor.data.LoaderTest
 
 public class LoaderTest {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        // Load card data
-        List<Card> level1 = CardLoader.loadCards("data/cards_level1.csv", 1);
-        List<Card> level2 = CardLoader.loadCards("data/cards_level2.csv", 2);
-        List<Card> level3 = CardLoader.loadCards("data/cards_level3.csv", 3);
+        // CardLoader test
+        CardLoader cardLoader = new CardLoader();
+        System.out.println("=== Card Deck Sizes ===");
+        System.out.println("Level 1 deck: " + cardLoader.getDeckSize(1));
+        System.out.println("Level 2 deck: " + cardLoader.getDeckSize(2));
+        System.out.println("Level 3 deck: " + cardLoader.getDeckSize(3));
 
-        // Load noble data
-        List<Noble> nobles = NobleLoader.loadNobles("data/nobles.csv");
+        System.out.println("\n=== Drawing Cards ===");
+        Card drawn1 = cardLoader.drawCard(1);
+        Card drawn2 = cardLoader.drawCard(2);
+        System.out.println("Drew L1 card: " + drawn1);
+        System.out.println("Drew L2 card: " + drawn2);
+        System.out.println("Level 1 deck after 1 draws: " + cardLoader.getDeckSize(1));
+        System.out.println("Level 2 deck after 1 draws: " + cardLoader.getDeckSize(2));
 
-        // print out all card data
-        System.out.println("Total Level 1 Cards: " + level1.size());
-        System.out.println("Total Level 2 Cards: " + level2.size());
-        System.out.println("Total Level 3 Cards: " + level3.size());
-        System.out.println("Total Noble Cards: " + nobles.size());
+        // NobleLoader test
+        NobleLoader nobleLoader = new NobleLoader();
+        System.out.println("\n=== Noble Data ===");
+        System.out.println("Total nobles loaded: " + nobleLoader.getAllNobles().size());
+
+        List<Noble> drawnNobles = nobleLoader.drawNobles(2);
+        System.out.println("Drew Nobles for 2 players: " + drawnNobles);
+        System.out.println("Available nobles (2 players): " + nobleLoader.getAvailNobles().size());
+
+        for (Noble noble : nobleLoader.getAvailNobles()) {
+            System.out.println("  " + noble);
+        }
     }
 }

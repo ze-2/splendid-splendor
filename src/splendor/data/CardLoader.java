@@ -8,16 +8,109 @@ import java.util.*;
 
 public class CardLoader {
 
+    // Per-level tracking (index 0 = level 1, index 1 = level 2, index 2 = level 3)
+    private Map<Integer, List<Card>> allCards = new HashMap<Integer, List<Card>>();       // all cards ever loaded (never changes)
+    private Map<Integer, List<Card>> availCards = new HashMap<Integer, List<Card>>();     // face-down deck cards still available to draw
+    private Map<Integer, List<Card>> drawnCards = new HashMap<Integer, List<Card>>();     // all cards that have been drawn
+
     /**
-     * Loads development cards from a CSV file.
+     * Loads all development cards from CSV files and prepares shuffled decks.
      * CSV format: level,bonus_gem,prestige_points,ruby,emerald,sapphire,diamond,onyx
      *
-     * @param csvPath path to the CSV file
-     * @param level   expected card level (1, 2, or 3)
-     * @return list of Card objects parsed from the file
-     * @throws FileNotFoundException if the file cannot be found
+     * @throws FileNotFoundException if any CSV file cannot be found
      */
-    public static List<Card> loadCards(String csvPath, int level) throws FileNotFoundException {
+    public CardLoader() throws FileNotFoundException {
+        String[] paths = {
+            "data/cards_level1.csv",
+            "data/cards_level2.csv",
+            "data/cards_level3.csv"
+        };
+
+        for (int i = 0; i < 3; i++) {
+            int level = i + 1;
+            List<Card> loaded = loadCards(paths[i]);
+            allCards.put(level, loaded);
+            drawnCards.put(level, new ArrayList<>());
+        }
+
+        // init avail cards
+        availCards = allCards;
+
+        shuffle();
+    }
+
+    /**
+     * Shuffles the available cards for all 3 levels.
+     */
+    public void shuffle() {
+        for (int level = 1; level <= 3; level++) {
+            Collections.shuffle(availCards.get(level));         // shuffling algo may be improved
+        }
+    }
+
+    /**
+     * Draws the top card from a level's face-down deck.
+     *
+     * @param level the card level (1, 2, or 3)
+     * @return the drawn Card, or null if the deck is empty
+     */
+    public Card drawCard(int level) {
+        List<Card> deck = availCards.get(level);
+        if (deck.isEmpty()) {
+            return null;
+        }
+        Card card = deck.remove(0);
+        drawnCards.get(level).add(card);
+        return card;
+    }
+
+    /**
+     * Draws multiple cards from a level's face-down deck.
+     *
+     * @param level the card level (1, 2, or 3)
+     * @param count number of cards to draw
+     * @return list of drawn Cards (may be smaller than count if deck runs out)
+     */
+    public List<Card> drawCard(int level, int count) {
+        List<Card> drawn = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            Card card = drawCard(level);
+            if (card == null) {
+                break;
+            }
+            drawn.add(card);
+        }
+        return drawn;
+    }
+
+    /**
+     * Returns the drawn cards for a level.
+     */
+
+    public List<Card> getAvailCards(int level) {
+        return availCards.get(level);
+    }
+
+    public List<Card> getDrawnCards(int level) {
+        return drawnCards.get(level);
+    }
+
+    public List<Card> getAllCards(int level) {
+        return allCards.get(level);
+    }
+
+    public int getDeckSize(int level) {
+        return availCards.get(level).size();
+    }
+
+    public boolean isDeckEmpty(int level) {
+        return availCards.get(level).isEmpty();
+    }
+
+    /**
+     * Parses a single CSV file into a list of Card objects.
+     */
+    private List<Card> loadCards(String csvPath) throws FileNotFoundException {
         List<Card> cards = new ArrayList<>();
 
         File file = new File(csvPath);
@@ -32,7 +125,6 @@ public class CardLoader {
             if (line.isEmpty() || line.startsWith("#")) {
                 continue;
             }
-
 
             // split based on headers
             // level,bonus_gem,prestige_points,ruby,emerald,sapphire,diamond,onyx

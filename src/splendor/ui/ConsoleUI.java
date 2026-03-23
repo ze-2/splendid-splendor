@@ -12,20 +12,24 @@ public class ConsoleUI {
         sc = new Scanner(System.in);
     }
 
+    /**
+     * Displays the current board.
+     * @param board the board
+     */
     public void displayBoard(Board board) {
         System.out.println();
         System.out.println("========================================");
         System.out.println("              GAME BOARD                ");
         System.out.println("========================================");
 
-        // Gem bank
+        // Prints the Gem bank
         System.out.println("\n--- Gem Bank ---");
         Map<GemType, Integer> bank = board.getGemBank();
         for (GemType gem : GemType.values()) {
             System.out.printf("  %-10s: %d%n", gem, bank.getOrDefault(gem, 0));
         }
 
-        // Visible cards (highest level first)
+        // Prints the Visible cards (highest level first)
         for (int level = 2; level >= 0; level--) {
             System.out.printf("%n--- Level %d Cards ---%n", level + 1);
             Card[] row = board.getVisibleCards()[level];
@@ -39,7 +43,7 @@ public class ConsoleUI {
             System.out.printf("  Deck: %d cards remaining%n", board.getDecks()[level].size());
         }
 
-        // Nobles
+        // Prints the nobles
         System.out.println("\n--- Nobles ---");
         List<Noble> nobles = board.getNobles();
         for (int i = 0; i < nobles.size(); i++) {
@@ -47,11 +51,17 @@ public class ConsoleUI {
         }
         System.out.println();
     }
-
-    public void displayPlayerStatus(Player player) {
-        System.out.println("\n--- " + player.getName() + "'s Status ---");
+    /**
+     * Displays a given player's status
+     * @param player the player
+     * @param isCurrPlayer whether the player being displayed is the current player. 
+     * Affects whether hidden cards are shown
+     */
+    public void displayPlayerStatus(Player player, boolean isCurrPlayer) {
+        System.out.printf("%n--- " + player.getName() + "'s Status%s ---%n", isCurrPlayer ? "" : " (You)");
         System.out.println("  Prestige Points: " + player.getPrestigePoints());
 
+        //Gems printing
         System.out.print("  Gems: ");
         StringJoiner gemJoiner = new StringJoiner(", ");
         for (GemType gem : GemType.values()) {
@@ -62,6 +72,7 @@ public class ConsoleUI {
         }
         System.out.println(gemJoiner.length() > 0 ? gemJoiner : "(none)");
 
+        //Print bonus gems from cards
         System.out.print("  Bonuses: ");
         StringJoiner bonusJoiner = new StringJoiner(", ");
         Map<GemType, Integer> bonuses = player.getBonusGems();
@@ -72,13 +83,18 @@ public class ConsoleUI {
         }
         System.out.println(bonusJoiner.length() > 0 ? bonusJoiner : "(none)");
 
+        //Print cards avail currently
         System.out.println("  Purchased Cards: " + player.getPurchasedCardCount());
 
         if (!player.getReservedCards().isEmpty()) {
             System.out.println("  Reserved Cards:");
             List<Card> reserved = player.getReservedCards();
             for (int i = 0; i < reserved.size(); i++) {
-                System.out.printf("    [%d] %s%n", i + 1, reserved.get(i));
+                if (!isCurrPlayer && reserved.get(i).isHidden()) {
+                    System.out.printf("    [%d] %s%n", i + 1, "Card Face Down");
+                } else {
+                    System.out.printf("    [%d] %s%n", i + 1, reserved.get(i));
+                }
             }
         }
 
@@ -88,10 +104,19 @@ public class ConsoleUI {
         System.out.println();
     }
 
+    /**
+     * Displays turn header
+     * @param player the player
+     */
     public void displayTurnHeader(Player player) {
         System.out.println("=== " + player.getName() + "'s Turn ===");
     }
 
+    /**
+     * Displays the winners
+     * @param List<player> If equal prestige, lowest development card count wins. 
+     * If lowest development card count is equal, multiple winners.
+     */
     public void displayWinner(List<Player> winners) {
         System.out.println("\n========================================");
         System.out.println("              GAME OVER!                ");
@@ -102,9 +127,11 @@ public class ConsoleUI {
                     winner.getName(), winner.getPrestigePoints(), winner.getPurchasedCardCount());
         } else {
             System.out.println("Shared victory!");
+            System.out.printf("  %d prestige points, %d purchased cards%n  Winners: %n",
+                        winners.get(0).getPrestigePoints(), winners.get(0).getPurchasedCardCount());
             for (Player w : winners) {
-                System.out.printf("  %s - %d prestige points, %d purchased cards%n",
-                        w.getName(), w.getPrestigePoints(), w.getPurchasedCardCount());
+                System.out.printf("  %s %n",
+                        w.getName());
             }
         }
     }
@@ -157,7 +184,8 @@ public class ConsoleUI {
     public Map<GemType, Integer> promptTake3Gems(Board board, ActionValidator validator) {
         List<GemType> availableGems = new ArrayList<>();
         for (GemType gem : GemType.values()) {
-            if (gem == GemType.GOLD) continue;
+            if (gem == GemType.GOLD)
+                continue;
             if (board.getGemBank().getOrDefault(gem, 0) > 0) {
                 availableGems.add(gem);
             }
@@ -191,7 +219,8 @@ public class ConsoleUI {
     public GemType promptTake2Gems(Board board, ActionValidator validator) {
         List<GemType> eligible = new ArrayList<>();
         for (GemType gem : GemType.values()) {
-            if (gem == GemType.GOLD) continue;
+            if (gem == GemType.GOLD)
+                continue;
             if (board.getGemBank().getOrDefault(gem, 0) >= 4) {
                 eligible.add(gem);
             }
@@ -218,14 +247,14 @@ public class ConsoleUI {
                 if (row[slot] != null) {
                     System.out.printf("  [%d] Level %d, Slot %d: %s%n",
                             idx, level + 1, slot + 1, row[slot]);
-                    options.add(new int[]{level, slot});
+                    options.add(new int[] { level, slot });
                     idx++;
                 }
             }
             if (!board.getDecks()[level].isEmpty()) {
                 System.out.printf("  [%d] Level %d deck (face-down, %d remaining)%n",
                         idx, level + 1, board.getDecks()[level].size());
-                options.add(new int[]{level, -1});
+                options.add(new int[] { level, -1 });
                 idx++;
             }
         }
@@ -275,7 +304,7 @@ public class ConsoleUI {
                 heldTypes.add(gem);
             }
         }
-        
+
         Map<GemType, Integer> toDiscard = new EnumMap<>(GemType.class);
         Map<GemType, Integer> tempGems = new EnumMap<>(player.getGems());
         int remaining = excess;
@@ -292,7 +321,7 @@ public class ConsoleUI {
                 System.out.printf("  [%d] %s (%d held)%n",
                         i + 1, discardable.get(i), tempGems.get(discardable.get(i)));
             }
-            
+
             int choice = readInt("Choose gem: ", 1, discardable.size());
             GemType chosen = discardable.get(choice - 1);
             toDiscard.merge(chosen, 1, Integer::sum);
@@ -310,7 +339,7 @@ public class ConsoleUI {
         for (int i = 0; i < eligible.size(); i++) {
             System.out.printf("  [%d] %s%n", i + 1, eligible.get(i));
         }
-        
+
         int choice = readInt("Choose noble: ", 1, eligible.size());
         return eligible.get(choice - 1);
     }
@@ -345,11 +374,16 @@ public class ConsoleUI {
 
     private String describeAction(ActionType action) {
         switch (action) {
-            case TAKE_THREE: return "Take 3 different gems";
-            case TAKE_TWO:   return "Take 2 gems of same colour";
-            case RESERVE:    return "Reserve a card";
-            case BUY:        return "Buy a card";
-            default:         return action.name();
+            case TAKE_THREE:
+                return "Take 3 different gems";
+            case TAKE_TWO:
+                return "Take 2 gems of same colour";
+            case RESERVE:
+                return "Reserve a card";
+            case BUY:
+                return "Buy a card";
+            default:
+                return action.name();
         }
     }
 }

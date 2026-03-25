@@ -7,18 +7,21 @@ public class Card {
     private GemType bonusGem;
     private int prestigePoints;
     private Map<GemType, Integer> cost;
+    private boolean hidden;
 
-    public Card(int level, GemType bonusGem, int prestigePoints, Map<GemType, Integer> cost) {
+    public Card(int level, GemType bonusGem, int prestigePoints, Map<GemType, Integer> cost, boolean hidden) {
         this.level = level;
         this.bonusGem = bonusGem;
         this.prestigePoints = prestigePoints;
         this.cost = cost;
+        this.hidden = hidden;
     }
 
     public int getLevel() { return level; }
     public GemType getBonusGem() { return bonusGem; }
     public int getPrestigePoints() { return prestigePoints; }
     public Map<GemType, Integer> getCost() { return cost; }
+    public boolean isHidden() { return hidden; }
 
     @Override
     public String toString() {

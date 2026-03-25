@@ -1,6 +1,5 @@
 import java.util.*;
 
-import javax.smartcardio.Card;
 
 public abstract class Player {
 

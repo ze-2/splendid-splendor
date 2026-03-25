@@ -282,7 +282,7 @@ public class AIPlayer extends Player {
     private double evaluateOpponentThreat(Card card, Board board) {
         double maxThreat = 0;
 
-        // Only bother hate-drafting cards that yield points or are high tier
+        // Only bother blocking cards that yield points or are high tier
         if (card.getPrestigePoints() < 2 && totalCost(card) < 5) {
             return 0;
         }
@@ -293,7 +293,7 @@ public class AIPlayer extends Player {
 
             int deficit = calculateDeficitForPlayer(card, opponent);
 
-            // If the opponent is 0-2 gems away from a valuable card, it's a high threat
+            // If the opponent is 0-2 gems away from a valuable card, it's a threat
             if (deficit <= 2) {
                 double threat = (card.getPrestigePoints() * 5.0) + ((3 - deficit) * 3.0);
                 if (threat > maxThreat) {

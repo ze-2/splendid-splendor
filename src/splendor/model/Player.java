@@ -91,6 +91,9 @@ public abstract class Player {
         gems.put(type, current - amount);
     }
 
+    public List<Card> getReservedCards() {
+        return Collections.unmodifiableList(reservedCards);
+    }
 
     // Reserves card - doesn't change any gold info
     public void reserveCard(Card card) {

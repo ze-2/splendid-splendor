@@ -1,5 +1,7 @@
 import java.util.*;
 
+import splendor.ActionType;
+
 
 public abstract class Player {
 
@@ -107,6 +109,20 @@ public abstract class Player {
     public void addNoble(Noble noble) {
         nobles.add(noble);
     }
+
+    public abstract ActionType chooseAction(Board board, ActionValidator actionValidator);
+
+    public abstract Map<GemType,Integer> chooseTake3Gems(Board board, ActionValidator actionValidator);
+
+    public abstract GemType chooseTake2Gems(Board board, ActionValidator actionValidator);
+
+    public abstract int[] chooseReserveCard(Board board, ActionValidator actionValidator);
+
+    public abstract Card chooseBuyCard(Board board, ActionValidator actionValidator);
+
+    public abstract Map<GemType, Integer> chooseDiscard(int excess);
+
+    public abstract Noble chooseNoble(List<Noble> nobles);
 
     @Override
     public String toString() {

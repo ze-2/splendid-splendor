@@ -1,3 +1,4 @@
+package splendor.model;
 
 
 public enum ActionType {

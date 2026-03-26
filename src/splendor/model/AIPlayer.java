@@ -5,13 +5,13 @@ import splendor.ActionType;
 public class AIPlayer extends Player {
 
     /* Current state of face up cards, updated every time chooseAction is called */
-    Card[][] boardVisibleCards;
+    private Card[][] boardVisibleCards;
 
     /*
      * When gem bonuses exceed 7, consider as late game.
      * (Gem bonus tends to drive the game more than prestige)
      */
-    boolean isLateGame = false;
+    private boolean isLateGame = false;
 
     public AIPlayer(String name) {
         super(name);

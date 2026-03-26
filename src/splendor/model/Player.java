@@ -1,3 +1,5 @@
+package splendor.model;
+
 import java.util.*;
 
 
@@ -104,8 +106,56 @@ public abstract class Player {
         reservedCards.add(card);
     }
 
+    public List<Noble> getNobles() {
+        return Collections.unmodifiableList(nobles);
+    }
+
     public void addNoble(Noble noble) {
         nobles.add(noble);
+    }
+
+    public List<Card> getPurchasedCards() {
+        return Collections.unmodifiableList(purchasedCards);
+    }
+
+    /**
+     * Buys a card: deducts gems (using bonuses first, then gold as wildcard),
+     * adds card to purchased list, removes from reserved if applicable.
+     * Returns the map of gems actually spent (to be returned to bank).
+     *
+     * P3 should replace this with the final implementation.
+     */
+    public Map<GemType, Integer> buyCard(Card card) {
+        Map<GemType, Integer> spent = new EnumMap<>(GemType.class);
+        Map<GemType, Integer> bonuses = getBonusGems();
+        int goldNeeded = 0;
+
+        for (Map.Entry<GemType, Integer> entry : card.getCost().entrySet()) {
+            GemType gem = entry.getKey();
+            int cost = entry.getValue();
+            int bonus = bonuses.getOrDefault(gem, 0);
+            int remaining = Math.max(0, cost - bonus);
+            int held = gems.get(gem);
+            int fromGems = Math.min(remaining, held);
+            int shortfall = remaining - fromGems;
+
+            if (fromGems > 0) {
+                spent.put(gem, fromGems);
+                gems.put(gem, held - fromGems);
+            }
+            goldNeeded += shortfall;
+        }
+
+        if (goldNeeded > 0) {
+            spent.put(GemType.GOLD, goldNeeded);
+            gems.put(GemType.GOLD, gems.get(GemType.GOLD) - goldNeeded);
+        }
+
+        // Remove from reserved if it was reserved
+        reservedCards.remove(card);
+
+        purchasedCards.add(card);
+        return spent;
     }
 
     @Override
@@ -113,8 +163,6 @@ public abstract class Player {
         return "Player{" +
             "name='" + name + '\'' +
             ", prestige=" + getPrestigePoints() +
-            ", gems=" + formatGems(gems) +
-            ", bonusGems=" + formatGems(getBonusGems()) +
             ", purchased=" + purchasedCards.size()+
             ", reserved=" + reservedCards.size() +
             ", nobles=" + nobles.size() +

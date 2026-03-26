@@ -1,7 +1,8 @@
+package splendor.model;
+
 import java.util.*;
-
-import splendor.ActionType;
-
+import splendor.engine.*;
+import splendor.model.*;
 
 public abstract class Player {
 
@@ -23,9 +24,6 @@ public abstract class Player {
             gems.put(type, 0);
         }
     }
-
-    public abstract boolean isHuman();
-
 
     public String getName() {
         return name;
@@ -63,7 +61,7 @@ public abstract class Player {
         return Collections.unmodifiableMap(bonuses);
     }
 
-    // Total prestige points: sum of all purchased cards + all acquired nobles.
+    // total prestige points = sum of all purchased cards + all acquired nobles
     public int getPrestigePoints() {
         int total = 0;
         for (Card card : purchasedCards) {
@@ -97,7 +95,7 @@ public abstract class Player {
         return Collections.unmodifiableList(reservedCards);
     }
 
-    // Reserves card - doesn't change any gold info
+    // reserves card - doesn't change any gold info
     public void reserveCard(Card card) {
         if (reservedCards.size() >= 3) {
             throw new IllegalStateException(
@@ -129,11 +127,10 @@ public abstract class Player {
         return "Player{" +
             "name='" + name + '\'' +
             ", prestige=" + getPrestigePoints() +
-            ", gems=" + formatGems(gems) +
-            ", bonusGems=" + formatGems(getBonusGems()) +
+            ", gems=" + gems +
+            ", bonusGems=" + getBonusGems() +
             ", purchased=" + purchasedCards.size()+
             ", reserved=" + reservedCards.size() +
-            ", nobles=" + nobles.size() +
-            ", human=" + isHuman() + '}';
+            ", nobles=" + nobles.size() + '}';
     }
 }

@@ -16,12 +16,6 @@ public class AIPlayer extends Player {
     public AIPlayer(String name) {
         super(name);
     }
-
-    @Override
-    public boolean isHuman() {
-        return false;
-    }
-
     /**
      * @param board     The current game board.
      * @param validator The action validator to check legal moves.

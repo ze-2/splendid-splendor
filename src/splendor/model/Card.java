@@ -1,30 +1,42 @@
 package splendor.model;
 
-import java.util.Map;
+import java.util.*;
 
 public class Card {
     private int level;
-    private GemType bonusGem;
+    private GemType bonusGem; // permanent discount
     private int prestigePoints;
-    private Map<GemType, Integer> cost;
-    private boolean hidden;
+    private HashMap <GemType, Integer> cost; // what the player pays
 
-    public Card(int level, GemType bonusGem, int prestigePoints, Map<GemType, Integer> cost, boolean hidden) {
+
+    public Card (int level, GemType bonusGem, int prestigePoints, HashMap <GemType, Integer> cost) {
         this.level = level;
         this.bonusGem = bonusGem;
         this.prestigePoints = prestigePoints;
         this.cost = cost;
-        this.hidden = hidden;
     }
 
-    public int getLevel() { return level; }
-    public GemType getBonusGem() { return bonusGem; }
-    public int getPrestigePoints() { return prestigePoints; }
-    public Map<GemType, Integer> getCost() { return cost; }
-    public boolean isHidden() { return hidden; }
-
-    @Override
-    public String toString() {
-        return "Card[L" + level + " " + bonusGem + " " + prestigePoints + "pts cost=" + cost + "]";
+    public int getLevel() {
+        return level;
     }
+
+    public GemType getBonusGem () {
+        return bonusGem;
+    }
+
+    public int getPrestigePoints() {
+        return prestigePoints;
+    }
+
+    public HashMap <GemType, Integer> getCost () {
+        return cost;
+    }
+
+    public String toString () {
+        return String.format("[Level: " + this.level +
+                            ", Gem Cost: " + this.cost +
+                            ", Bonus Gem Colour: " + this.bonusGem +
+                            ", Prestige Points: " + this.prestigePoints + "]");
+    }
+
 }

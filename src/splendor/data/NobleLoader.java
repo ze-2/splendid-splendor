@@ -33,8 +33,9 @@ public class NobleLoader {
 
             // read following headers
             // prestige_points,ruby,emerald,sapphire,diamond,onyx
+            // CSV format: prestige_points,ruby,emerald,sapphire,diamond,onyx
+            // Noble constructor hardcodes prestige to 3, so skip first column
             String[] tokens = line.split(",");
-            int prestigePoints = Integer.parseInt(tokens[0].trim());
 
             Map<GemType, Integer> requirements = new HashMap<>();
             requirements.put(GemType.RUBY, Integer.parseInt(tokens[1].trim()));
@@ -43,7 +44,7 @@ public class NobleLoader {
             requirements.put(GemType.DIAMOND, Integer.parseInt(tokens[4].trim()));
             requirements.put(GemType.ONYX, Integer.parseInt(tokens[5].trim()));
 
-            allNobles.add(new Noble(prestigePoints, requirements));
+            allNobles.add(new Noble(requirements));
         }
 
         fr.close();

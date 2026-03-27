@@ -6,7 +6,7 @@ import splendor.model.Card;
 import splendor.model.Noble;
 
 // compile with
-// javac -d classes src/splendor/model/GemType.java src/splendor/model/Card.java src/splendor/model/Noble.java src/splendor/data/CardLoader.java src/splendor/data/NobleLoader.java src/splendor/data/LoaderTest.java
+// ./compile.sh
 
 // run with
 // java -cp classes splendor.data.LoaderTest

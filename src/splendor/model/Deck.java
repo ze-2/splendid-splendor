@@ -1,30 +1,29 @@
 package splendor.model;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Deck {
-    private List<Card> cards;
+    private final List<Card> cards;
 
-    public Deck (List<Card> cards) {
-        this.cards = cards;
+    public Deck(List<Card> cards) {
+        this.cards = new ArrayList<>(cards);
     }
 
-    public void shuffle () {
+    public void shuffle() {
         Collections.shuffle(cards);
     }
 
     public Card deal() {
-        return cards.remove(0);
-    }
-
-    public Card peek () {
-        return cards.get(0);
+        if (cards.isEmpty()) {
+            return null;
+        }
+        return cards.remove(cards.size() - 1);
     }
 
     public boolean isEmpty() {
-        if (cards.size() == 0) {
-            return true;
-        }
-        return false;
+        return cards.isEmpty();
     }
 
     public int size() {

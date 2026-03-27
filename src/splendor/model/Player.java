@@ -158,10 +158,17 @@ public abstract class Player {
         reservedCards.add(card);
     }
 
+    public List<Noble> getNobles() {
+        return Collections.unmodifiableList(nobles);
+    }
+
     public void addNoble(Noble noble) {
         nobles.add(noble);
     }
 
+    public List<Card> getPurchasedCards() {
+        return Collections.unmodifiableList(purchasedCards);
+    }
 
     @Override
     public String toString() {

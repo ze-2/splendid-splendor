@@ -21,8 +21,8 @@ public class Noble {
     }
 
     public boolean canVisit (Player player) {
-        for (GemType c : requirements.keySet()) {
-            // loop through every required colour to see if there is enough for nobles to visit
+        for (GemType c : requirements.keySet()) { 
+            // loop through every required colour to see if there is enough for nobles to visit 
             Integer playerGems = player.getBonusGems().get(c);
             if (playerGems == null) {
                 playerGems = 0;
@@ -30,7 +30,7 @@ public class Noble {
 
             if (playerGems < requirements.get(c)) {
                 return false;
-                // if any requirements fail then immediately return false
+                // if any requirements fail then immediately return false 
             }
         }
         return true;

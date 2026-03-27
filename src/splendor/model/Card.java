@@ -1,15 +1,14 @@
 package splendor.model;
-
 import java.util.*;
 
 public class Card {
     private int level;
-    private GemType bonusGem; // permanent discount
+    private GemType bonusGem; // permanent discount 
     private int prestigePoints;
-    private HashMap <GemType, Integer> cost; // what the player pays
+    private Map<GemType, Integer> cost; // what the player pays
 
 
-    public Card (int level, GemType bonusGem, int prestigePoints, HashMap <GemType, Integer> cost) {
+    public Card (int level, GemType bonusGem, int prestigePoints, Map<GemType, Integer> cost) {
         this.level = level;
         this.bonusGem = bonusGem;
         this.prestigePoints = prestigePoints;
@@ -28,15 +27,20 @@ public class Card {
         return prestigePoints;
     }
 
-    public HashMap <GemType, Integer> getCost () {
+    public Map<GemType, Integer> getCost () {
         return cost;
     }
 
+    public boolean isHidden() {
+        return false; // TODO: P1 to add hidden field + constructor param
+    }
+
     public String toString () {
-        return String.format("[Level: " + this.level +
-                            ", Gem Cost: " + this.cost +
-                            ", Bonus Gem Colour: " + this.bonusGem +
+        return String.format("[Level: " + this.level + 
+                            ", Gem Cost: " + this.cost + 
+                            ", Bonus Gem Colour: " + this.bonusGem + 
                             ", Prestige Points: " + this.prestigePoints + "]");
     }
+
 
 }

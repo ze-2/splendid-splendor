@@ -1,4 +1,5 @@
 package splendor.model;
+// use enum so that it is not prone to mispelling 
 
 // use enum so that it is not prone to mispelling
 
@@ -11,7 +12,7 @@ public enum GemType {
 
     private String colour;
 
-    // enum constructors cannot be public
+    // enum constructors cannot be public 
     GemType(String colour) {
         this.colour = colour;
     }

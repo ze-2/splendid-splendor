@@ -2,6 +2,8 @@ package splendor.model;
 
 import java.util.*;
 
+import splendor.engine.*;
+import splendor.model.*;
 
 public abstract class Player {
 
@@ -24,11 +26,61 @@ public abstract class Player {
         }
     }
 
-    public abstract boolean isHuman();
-
+    // Abstract methods, to be implemented by HumanPlayer and AIPlayer
+    public abstract ActionType chooseAction(Board board, ActionValidator actionValidator);
+    public abstract Map<GemType,Integer> chooseTake3Gems(Board board, ActionValidator actionValidator);
+    public abstract GemType chooseTake2Gems(Board board, ActionValidator actionValidator);
+    public abstract int[] chooseReserveCard(Board board, ActionValidator actionValidator);
+    public abstract Card chooseBuyCard(Board board, ActionValidator actionValidator);
+    public abstract Map<GemType, Integer> chooseDiscard(int excess);
+    public abstract Noble chooseNoble(List<Noble> nobles);
 
     public String getName() {
         return name;
+    }
+
+    // assumes the canBuy validator is ran before (invoked by gameEngine)
+    public Map<GemType, Integer> buyCard(Card card) {
+
+        Map<GemType, Integer> bonuses = getBonusGems();
+        Map<GemType, Integer> spent = new HashMap<>();
+
+        int goldNeeded = 0;
+
+        for (Map.Entry<GemType, Integer> entry : card.getCost().entrySet()) {
+            GemType color = entry.getKey();
+            int cost = entry.getValue();
+
+            // get bonuses
+            int bonus = bonuses.getOrDefault(color, 0);
+            int effectiveCost = Math.max(0, cost - bonus);
+
+            // calculate if any shortfall, then add to goldneeded
+            if (effectiveCost != 0) {
+                int available = gems.getOrDefault(color, 0);
+                // how much player can pay
+                int pay = Math.min(available, effectiveCost);
+                int shortfall = effectiveCost - pay;
+
+                if (pay > 0) {
+                    spent.put(color, pay);
+                    gems.put(color, available - pay);
+                }
+
+                goldNeeded += shortfall;
+            }
+        }
+
+        if (goldNeeded > 0) {
+            spent.put(GemType.GOLD, goldNeeded);
+            gems.put(GemType.GOLD, gems.getOrDefault(GemType.GOLD, 0) - goldNeeded);
+        }
+
+        // move card from reserved to purchased (if it was reserved)
+        reservedCards.remove(card);
+        purchasedCards.add(card);
+
+        return spent;
     }
 
     public Map<GemType, Integer> getGems() {
@@ -63,7 +115,7 @@ public abstract class Player {
         return Collections.unmodifiableMap(bonuses);
     }
 
-    // Total prestige points: sum of all purchased cards + all acquired nobles.
+    // total prestige points = sum of all purchased cards + all acquired nobles
     public int getPrestigePoints() {
         int total = 0;
         for (Card card : purchasedCards) {
@@ -97,7 +149,7 @@ public abstract class Player {
         return Collections.unmodifiableList(reservedCards);
     }
 
-    // Reserves card - doesn't change any gold info
+    // reserves card - doesn't change any gold info
     public void reserveCard(Card card) {
         if (reservedCards.size() >= 3) {
             throw new IllegalStateException(
@@ -118,54 +170,15 @@ public abstract class Player {
         return Collections.unmodifiableList(purchasedCards);
     }
 
-    /**
-     * Buys a card: deducts gems (using bonuses first, then gold as wildcard),
-     * adds card to purchased list, removes from reserved if applicable.
-     * Returns the map of gems actually spent (to be returned to bank).
-     *
-     * P3 should replace this with the final implementation.
-     */
-    public Map<GemType, Integer> buyCard(Card card) {
-        Map<GemType, Integer> spent = new EnumMap<>(GemType.class);
-        Map<GemType, Integer> bonuses = getBonusGems();
-        int goldNeeded = 0;
-
-        for (Map.Entry<GemType, Integer> entry : card.getCost().entrySet()) {
-            GemType gem = entry.getKey();
-            int cost = entry.getValue();
-            int bonus = bonuses.getOrDefault(gem, 0);
-            int remaining = Math.max(0, cost - bonus);
-            int held = gems.get(gem);
-            int fromGems = Math.min(remaining, held);
-            int shortfall = remaining - fromGems;
-
-            if (fromGems > 0) {
-                spent.put(gem, fromGems);
-                gems.put(gem, held - fromGems);
-            }
-            goldNeeded += shortfall;
-        }
-
-        if (goldNeeded > 0) {
-            spent.put(GemType.GOLD, goldNeeded);
-            gems.put(GemType.GOLD, gems.get(GemType.GOLD) - goldNeeded);
-        }
-
-        // Remove from reserved if it was reserved
-        reservedCards.remove(card);
-
-        purchasedCards.add(card);
-        return spent;
-    }
-
     @Override
     public String toString() {
         return "Player{" +
             "name='" + name + '\'' +
             ", prestige=" + getPrestigePoints() +
+            ", gems=" + gems +
+            ", bonusGems=" + getBonusGems() +
             ", purchased=" + purchasedCards.size()+
             ", reserved=" + reservedCards.size() +
-            ", nobles=" + nobles.size() +
-            ", human=" + isHuman() + '}';
+            ", nobles=" + nobles.size() + '}';
     }
 }

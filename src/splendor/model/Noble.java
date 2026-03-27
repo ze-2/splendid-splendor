@@ -1,11 +1,13 @@
 package splendor.model;
+
 import java.util.*;
 
 public class Noble {
-    private int prestigePoints; // each noble grants 3 prestige points 
+    private int prestigePoints; // each noble grants 3 prestige points
     private Map<GemType, Integer> requirements;
 
     public Noble(Map<GemType, Integer> requirements) {
+        // each noble tile is worth 3 prestige points
         this.prestigePoints = 3;
         this.requirements = requirements;
     }

@@ -53,7 +53,10 @@ public class SplendorGame {
         // build board 
         Board board = new Board(config, cards, nobles, numOfPlayers);
 
-        GameEngine engine = new GameEngine(players, board, ui, config);
+        WinChecker winChecker = new WinChecker();
+        ActionValidator validator = new ActionValidator();
+        
+        GameEngine engine = new GameEngine(players, board, ui, config, winChecker, validator);
         engine.start();
 
     }

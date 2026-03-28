@@ -56,7 +56,7 @@ public class ActionValidator {
         }
 
         // rule: can take 2 of same color if num of gems is >= 4
-        int available = board.getGemBank().getOrDefault(Color, 0);
+        int available = board.getGemBank().getOrDefault(color, 0);
         return available >= 4;
     }
 

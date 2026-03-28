@@ -1,4 +1,7 @@
+package splendor.engine;
+
 import java.util.*;
+import splendor.model.*;
 
 public class WinChecker {
     
@@ -17,7 +20,7 @@ public class WinChecker {
         List<Player> temp = new ArrayList<>();
         int max = Integer.MIN_VALUE;
         for (Player p : players) {
-            if (p.getPrestigePoints > max) {
+            if (p.getPrestigePoints() > max) {
                 if (temp.size() > 0) {
                     temp.clear();
                 }

@@ -1,3 +1,5 @@
+package splendor.model;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,7 +9,7 @@ import java.util.Map;
 import splendor.config.GameConfig;
 
 public class Board {
-    private Map(GemType, Integer) gemBank;
+    private Map<GemType, Integer> gemBank;
     private Card[][] visibleCards; // 3x4 array of face up cards
     private Deck[] decks; // have 3 levels 0, 1, 2
     private List<Noble> nobles;
@@ -18,7 +20,7 @@ public class Board {
             if (gemType == GemType.GOLD) {
                 gemBank.put(gemType, gameConfig.getGoldCount());
             } else {
-                gemBank.put(gemType, getGemCount(numPlayers))
+                gemBank.put(gemType, gameConfig.getGemCount(numPlayers));
             }
         }
 
@@ -54,7 +56,7 @@ public class Board {
         visibleCards = new Card[3][4];
         for (int i = 0; i < visibleCards.length; i++) {
             for (int j = 0; j < visibleCards.length; j++) {
-                visibleCards[i][j] = deck[i].deal();
+                visibleCards[i][j] = decks[i].deal();
             }
         }
 
@@ -64,7 +66,8 @@ public class Board {
         this.nobles = shuffled;
     }
 
-    public refillCards() {
+    
+    public void refillCards() {
         for (int level = 0; level < 3; level++) {
             for (int slot = 0; slot < 4; slot++) {
                 if (visibleCards[level][slot] == null) {
@@ -74,7 +77,7 @@ public class Board {
         }
     }
 
-    public Map(GemType, Integer) getGemBank() {
+    public Map<GemType, Integer> getGemBank() {
         return gemBank;
     }
 
@@ -99,7 +102,7 @@ public class Board {
     public void returnGems(Map<GemType, Integer> mp) {
         for (Map.Entry<GemType, Integer> e : mp.entrySet()) {
             // assumption that the gemBank will contain all the gem (keys)
-            Gemtype g = e.getKey();
+            GemType g = e.getKey();
             Integer i = e.getValue();
             gemBank.put(g, i + gemBank.get(g));
         }
@@ -108,21 +111,11 @@ public class Board {
     public Card takeVisibleCard(int level, int slot) {
         Card cardTaken = visibleCards[level][slot];
         visibleCards[level][slot] = decks[level].deal();
-        return Card;
+        return cardTaken;
     }
 
-    public card takeReserveCard (int level) {
-        return deck[level].deal();
-    }
-
-    public void refillCards() {
-        for (int i = 0; i < card.length; i++) {
-            for (int i = j;  j < card[0].length; j++) {
-                if (card[i][j] == null) {
-                    card[i][j] = decks[i].deal();
-                }
-            }
-        }
+    public Card takeReserveCard (int level) {
+        return decks[level].deal();
     }
 
     public void removeNoble(Noble noble) {

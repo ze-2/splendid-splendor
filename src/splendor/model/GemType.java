@@ -1,7 +1,6 @@
 package splendor.model;
 // use enum so that it is not prone to mispelling 
 
-// use enum so that it is not prone to mispelling
 
 public enum GemType {
 

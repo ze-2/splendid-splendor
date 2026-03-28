@@ -1,6 +1,8 @@
-import java.util.*;
+package splendor.model;
 
-import splendor.ActionType;
+import java.util.*;
+import splendor.engine.*;
+
 
 public class AIPlayer extends Player {
 
@@ -227,7 +229,7 @@ public class AIPlayer extends Player {
      * @return A map containing the GemTypes and quantities to discard.
      */
     @Override
-    public Map<GemType, Integer> chooseDiscardGems(int excess) {
+    public Map<GemType, Integer> chooseDiscard(int excess) {
         Map<GemType, Integer> toDiscard = new EnumMap<>(GemType.class);
         List<GemType> gemsByCount = new ArrayList<>();
 

@@ -3,7 +3,6 @@ package splendor.model;
 import java.util.*;
 
 import splendor.engine.*;
-import splendor.model.*;
 
 public abstract class Player {
 

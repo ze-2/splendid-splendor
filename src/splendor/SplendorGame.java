@@ -1,5 +1,12 @@
+package splendor;
+
 import java.util.*;
 import java.io.*;
+import splendor.config.*;
+import splendor.data.*;
+import splendor.ui.*;
+import splendor.model.*;
+import splendor.engine.*;
 
 public class SplendorGame {
     public static void main(String[] args) throws IOException {
@@ -37,9 +44,9 @@ public class SplendorGame {
         NobleLoader nobleLoader = new NobleLoader();
 
         List<Card> cards = new ArrayList<>();
-        cards.add(cardLoader.getAllCards(1));
-        cards.add(cardLoader.getAllCards(2));
-        cards.add(cardLoader.getAllCards(3));
+        cards.addAll(cardLoader.getAllCards(1));
+        cards.addAll(cardLoader.getAllCards(2));
+        cards.addAll(cardLoader.getAllCards(3));
 
         List<Noble> nobles = nobleLoader.getAllNobles();
 

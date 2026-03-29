@@ -50,7 +50,7 @@ public class SplendorGame {
         cards.addAll(cardLoader.getAllCards(2));
         cards.addAll(cardLoader.getAllCards(3));
 
-        List<Noble> nobles = nobleLoader.getAllNobles();
+        List<Noble> nobles = nobleLoader.drawNobles(numOfPlayers);
 
         // build board
         Board board = new Board(config, cards, nobles, numOfPlayers);

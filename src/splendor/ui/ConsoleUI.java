@@ -1,9 +1,8 @@
 package splendor.ui;
 
+import java.util.*;
 import splendor.engine.*;
 import splendor.model.*;
-
-import java.util.*;
 
 public class ConsoleUI {
     private final Scanner sc;
@@ -143,7 +142,7 @@ public class ConsoleUI {
     }
 
     public String promptPlayerName(int index) {
-        System.out.printf("Enter name for Player %d: ", index + 1);
+        System.out.printf("Enter name for Player %d: ", index);
         String name = sc.nextLine().trim();
         while (name.isEmpty()) {
             System.out.print("Name cannot be empty. Enter name: ");
@@ -153,7 +152,7 @@ public class ConsoleUI {
     }
 
     public String promptPlayerType(int index) {
-        System.out.printf("Is Player %d human or AI? (human/ai): ", index + 1);
+        System.out.printf("Is Player %d human or AI? (human/ai): ", index);
         while (true) {
             String type = sc.nextLine().trim().toLowerCase();
             if (type.equals("human") || type.equals("ai")) {

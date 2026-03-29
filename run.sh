@@ -1,0 +1,1 @@
+cp src/config.properties . && java -cp classes splendor.SplendorGame

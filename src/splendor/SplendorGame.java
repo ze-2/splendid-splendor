@@ -30,10 +30,12 @@ public class SplendorGame {
             Player p;
 
             if (type.equals("human")) {
-                p = new HumanPlayer(name);
+                p = new HumanPlayer(name, ui);
             }
             else if (type.equals("ai")) {
-                p = new AIPlayer(name);
+                p = new AIPlayer(name, players);
+            } else {
+                p = null;
             }
             // create player list
             players.add(p);
@@ -52,8 +54,11 @@ public class SplendorGame {
 
         // build board 
         Board board = new Board(config, cards, nobles, numOfPlayers);
+        
+        WinChecker winChecker = new WinChecker();
+        ActionValidator actionValidator = new ActionValidator();
 
-        GameEngine engine = new GameEngine(players, board, ui, config);
+        GameEngine engine = new GameEngine(players, board, ui, config, winChecker, actionValidator);
         engine.start();
 
     }

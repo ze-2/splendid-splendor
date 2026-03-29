@@ -86,7 +86,7 @@ public class GameEngine {
     // ── Action selection (human/AI branching) ────────────────────────
 
     private ActionType chooseAction(Player player) {
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             return ui.promptAction(player, board, validator);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseAction(board, validator) when P5 delivers
@@ -118,7 +118,7 @@ public class GameEngine {
     private void executeTake3(Player player) {
         Map<GemType, Integer> chosen;
 
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             chosen = ui.promptTake3Gems(board, validator);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseTake3Gems(board, validator)
@@ -136,7 +136,7 @@ public class GameEngine {
     private void executeTake2(Player player) {
         GemType colour;
 
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             colour = ui.promptTake2Gems(board, validator);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseTake2Gems(board, validator)
@@ -154,7 +154,7 @@ public class GameEngine {
     private void executeReserve(Player player) {
         int[] selection;
 
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             selection = ui.promptReserveCard(player, board, validator);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseReserveCard(board, validator)
@@ -188,7 +188,7 @@ public class GameEngine {
     private void executeBuy(Player player) {
         Card card;
 
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             card = ui.promptBuyCard(player, board, validator);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseBuyCard(board, validator)
@@ -231,7 +231,7 @@ public class GameEngine {
 
         Map<GemType, Integer> toDiscard;
 
-        if (player.isHuman()) {
+        if (player instanceof HumanPlayer) {
             toDiscard = ui.promptDiscardGems(player, excess);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseDiscard(excess)
@@ -262,7 +262,7 @@ public class GameEngine {
         Noble chosen;
         if (eligible.size() == 1) {
             chosen = eligible.get(0);
-        } else if (player.isHuman()) {
+        } else if (player instanceof HumanPlayer) {
             chosen = ui.promptNobleChoice(eligible);
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseNoble(eligible)

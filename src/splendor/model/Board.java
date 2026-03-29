@@ -16,6 +16,7 @@ public class Board {
     
     public Board(GameConfig gameConfig, List<Card> allCards, List<Noble> nobles, int numPlayers) {
         // initialise gem bank
+        gemBank = new HashMap<>();
         for (GemType gemType : GemType.values()) {
             if (gemType == GemType.GOLD) {
                 gemBank.put(gemType, gameConfig.getGoldCount());
@@ -45,7 +46,8 @@ public class Board {
                     break;
             }
         }
-        Deck[] decks = {new Deck(level1Cards), new Deck(level2Cards), new Deck(level3Cards)};
+        
+        decks = new Deck[]{new Deck(level1Cards), new Deck(level2Cards), new Deck(level3Cards)};
 
         // shuffle deck
         for (int i = 0; i < 3; i++) {
@@ -65,16 +67,11 @@ public class Board {
         Collections.shuffle(shuffled);
         this.nobles = shuffled;
     }
-
     
-    public void refillCards() {
-        for (int level = 0; level < 3; level++) {
-            for (int slot = 0; slot < 4; slot++) {
-                if (visibleCards[level][slot] == null) {
-                    visibleCards[level][slot] = decks[level].deal();
-                }
-            }
-        }
+    //Getters-----------------------------------------------------------------
+    
+    public Deck[] getDecks() {
+        return decks;
     }
 
     public Map<GemType, Integer> getGemBank() {
@@ -95,6 +92,16 @@ public class Board {
             int count = entry.getValue();
             if (count != 0) {
                 gemBank.put(type, gemBank.get(type) - count);
+            }
+        }
+    }
+    
+    public void refillCards() {
+        for (int level = 0; level < 3; level++) {
+            for (int slot = 0; slot < 4; slot++) {
+                if (visibleCards[level][slot] == null) {
+                    visibleCards[level][slot] = decks[level].deal();
+                }
             }
         }
     }

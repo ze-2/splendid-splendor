@@ -33,7 +33,9 @@ public class SplendorGame {
                 p = new HumanPlayer(name, ui);
             }
             else if (type.equals("ai")) {
-                p = new AIPlayer(name);
+                p = new AIPlayer(name, players);
+            } else {
+                p = null;
             }
             else {
                 throw new IllegalArgumentException("Invalid player type: " + type);
@@ -55,7 +57,11 @@ public class SplendorGame {
 
         // build board 
         Board board = new Board(config, cards, nobles, numOfPlayers);
+        
+        WinChecker winChecker = new WinChecker();
+        ActionValidator actionValidator = new ActionValidator();
 
+        GameEngine engine = new GameEngine(players, board, ui, config, winChecker, actionValidator);
         WinChecker winChecker = new WinChecker();
         ActionValidator validator = new ActionValidator();
 

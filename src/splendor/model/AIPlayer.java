@@ -8,6 +8,7 @@ public class AIPlayer extends Player {
 
     /* Current state of face up cards, updated every time chooseAction is called */
     private Card[][] boardVisibleCards;
+    private List<Player> players;
 
     /*
      * When gem bonuses exceed 7, consider as late game.
@@ -15,8 +16,9 @@ public class AIPlayer extends Player {
      */
     private boolean isLateGame = false;
 
-    public AIPlayer(String name) {
+    public AIPlayer(String name, List<Player> players) {
         super(name);
+        this.players = players;
     }
     /**
      * @param board     The current game board.
@@ -195,7 +197,7 @@ public class AIPlayer extends Player {
                 if (card != null) {
                     double ourScore = evaluateCard(card, board);
 
-                    double threatScore = evaluateOpponentThreat(card, board);
+                    double threatScore = evaluateOpponentThreat(card, board, players);
 
                     double combinedScore = ourScore + threatScore;
 
@@ -275,7 +277,7 @@ public class AIPlayer extends Player {
      * @param board The current game board.
      * @return A double representing the threat level of the card to our opponents.
      */
-    private double evaluateOpponentThreat(Card card, Board board) {
+    private double evaluateOpponentThreat(Card card, Board board, List<Player> players) {
         double maxThreat = 0;
 
         // Only bother blocking cards that yield points or are high tier
@@ -283,7 +285,7 @@ public class AIPlayer extends Player {
             return 0;
         }
 
-        for (Player opponent : board.getPlayers()) {
+        for (Player opponent : players) {
             if (opponent == this)
                 continue;
 

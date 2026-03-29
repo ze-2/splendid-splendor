@@ -1,1 +1,1 @@
-find src -name "*.java" | xargs javac -d classes
+find src -name "*.java" | xargs javac -d classes 2>&1

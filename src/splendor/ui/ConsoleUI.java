@@ -57,7 +57,7 @@ public class ConsoleUI {
      * Affects whether hidden cards are shown
      */
     public void displayPlayerStatus(Player player, boolean isCurrPlayer) {
-        System.out.printf("%n--- " + player.getName() + "'s Status%s ---%n", isCurrPlayer ? "" : " (You)");
+        System.out.printf("%n--- " + player.getName() + "'s Status%s ---%n", isCurrPlayer ? "(You)" : " ");
         System.out.println("  Prestige Points: " + player.getPrestigePoints());
 
         //Gems printing

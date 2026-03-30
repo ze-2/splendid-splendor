@@ -122,7 +122,9 @@ public class Board {
     }
 
     public Card takeReserveCard (int level) {
-        return decks[level].deal();
+        Card card = decks[level].deal();
+        card.setHidden();
+        return card;
     }
 
     public void removeNoble(Noble noble) {

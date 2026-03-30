@@ -49,6 +49,7 @@ public class GameEngine {
         for (int i = 0; i < players.size(); i++) {
             Player player = players.get(i);
 
+            ui.clearScreen();
             ui.displayBoard(board);
 
             // Show all players' statuses

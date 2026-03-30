@@ -43,8 +43,8 @@ public class NobleLoader {
             requirements.put(GemType.SAPPHIRE, Integer.parseInt(tokens[3].trim()));
             requirements.put(GemType.DIAMOND, Integer.parseInt(tokens[4].trim()));
             requirements.put(GemType.ONYX, Integer.parseInt(tokens[5].trim()));
-
-            allNobles.add(new Noble(requirements));
+            String name = tokens[6].trim();
+            allNobles.add(new Noble(requirements, name));
         }
 
         fr.close();

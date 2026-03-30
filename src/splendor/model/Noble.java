@@ -5,11 +5,17 @@ import java.util.*;
 public class Noble {
     private int prestigePoints; // each noble grants 3 prestige points
     private Map<GemType, Integer> requirements;
-
-    public Noble(Map<GemType, Integer> requirements) {
+    private String name;
+    
+    public Noble(Map<GemType, Integer> requirements, String name) {
         // each noble tile is worth 3 prestige points
         this.prestigePoints = 3;
         this.requirements = requirements;
+        this.name = name;
+    }
+    
+    public String getName() {
+        return this.name;
     }
 
     public int getPrestigePoints() {
@@ -37,7 +43,7 @@ public class Noble {
     }
 
     public String toString() {
-        return String.format("Noble: " + prestigePoints + " points, requires" + requirements);
+        return String.format("Noble: " + name + "Prestige: " + prestigePoints + " points, requires" + requirements);
     }
 
 

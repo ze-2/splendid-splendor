@@ -2,11 +2,14 @@ package splendor;
 
 import java.util.*;
 import java.io.*;
+import java.util.*;
 import splendor.config.*;
 import splendor.data.*;
 import splendor.ui.*;
 import splendor.model.*;
 import splendor.engine.*;
+import splendor.model.*;
+import splendor.ui.*;
 
 public class SplendorGame {
     public static void main(String[] args) throws IOException {

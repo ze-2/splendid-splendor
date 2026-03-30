@@ -1,0 +1,10 @@
+0
+5
+abc
+2
+
+TestPlayer
+invalid
+ai
+AIBot
+ai

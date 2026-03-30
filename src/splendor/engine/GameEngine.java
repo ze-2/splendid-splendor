@@ -104,8 +104,7 @@ public class GameEngine {
         if (player instanceof HumanPlayer) {
             return ui.promptAction(player, board, validator);
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseAction(board, validator) when P5 delivers
-            return aiChooseAction(player);
+            return ((AIPlayer) player).chooseAction(board, validator);
         }
     }
 
@@ -135,8 +134,7 @@ public class GameEngine {
             chosen = ui.promptTake3Gems(board, validator);
             if (chosen == null) return false;
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseTake3Gems(board, validator)
-            chosen = aiChooseTake3();
+            chosen = ((AIPlayer) player).chooseTake3Gems(board, validator);
         }
 
         board.takeGems(chosen);
@@ -155,8 +153,7 @@ public class GameEngine {
             colour = ui.promptTake2Gems(board, validator);
             if (colour == null) return false;
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseTake2Gems(board, validator)
-            colour = aiChooseTake2();
+            colour = ((AIPlayer) player).chooseTake2Gems(board, validator);
         }
 
         Map<GemType, Integer> toTake = new EnumMap<>(GemType.class);
@@ -175,8 +172,7 @@ public class GameEngine {
             selection = ui.promptReserveCard(player, board, validator);
             if (selection == null) return false;
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseReserveCard(board, validator)
-            selection = aiChooseReserve();
+            selection = ((AIPlayer) player).chooseReserveCard(board, validator);
         }
 
         int level = selection[0];
@@ -211,8 +207,7 @@ public class GameEngine {
             card = ui.promptBuyCard(player, board, validator);
             if (card == null) return false;
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseBuyCard(board, validator)
-            card = aiChooseBuy(player);
+            card = ((AIPlayer) player).chooseBuyCard(board, validator);
         }
 
         // Remove card from board if it's a visible card
@@ -255,8 +250,7 @@ public class GameEngine {
         if (player instanceof HumanPlayer) {
             toDiscard = ui.promptDiscardGems(player, excess);
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseDiscard(excess)
-            toDiscard = aiChooseDiscard(player, excess);
+            toDiscard = ((AIPlayer) player).chooseDiscard(excess);
         }
 
         for (Map.Entry<GemType, Integer> entry : toDiscard.entrySet()) {
@@ -271,7 +265,7 @@ public class GameEngine {
         List<Noble> eligible = new ArrayList<>();
 
         for (Noble noble : board.getNobles()) {
-            if (canVisit(noble, player)) {
+            if (noble.canVisit(player)) {
                 eligible.add(noble);
             }
         }
@@ -286,8 +280,7 @@ public class GameEngine {
         } else if (player instanceof HumanPlayer) {
             chosen = ui.promptNobleChoice(eligible);
         } else {
-            // TODO: Replace with ((AIPlayer) player).chooseNoble(eligible)
-            chosen = eligible.get(0);
+            chosen = ((AIPlayer) player).chooseNoble(eligible);
         }
 
         player.addNoble(chosen);
@@ -295,120 +288,4 @@ public class GameEngine {
         System.out.println(player.getName() + " is visited by a noble! (+3 prestige)");
     }
 
-    /**
-     * Checks if a noble's bonus gem requirements are met by the player.
-     * Inline helper until Noble.canVisit(Player) is added to the model class.
-     */
-    private boolean canVisit(Noble noble, Player player) {
-        Map<GemType, Integer> bonuses = player.getBonusGems();
-        for (Map.Entry<GemType, Integer> entry : noble.getRequirements().entrySet()) {
-            if (entry.getValue() > 0) {
-                int has = bonuses.getOrDefault(entry.getKey(), 0);
-                if (has < entry.getValue()) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    // ── AI stub methods ──────────────────────────────────────────────
-    // TODO: Remove all stubs below when P5 delivers AIPlayer
-
-    private ActionType aiChooseAction(Player player) {
-        List<ActionType> available = validator.getAvailableActions(player, board);
-        if (available.isEmpty()) {
-            return null;
-        }
-        // Prefer BUY if available, else TAKE_THREE, else first available
-        if (available.contains(ActionType.BUY)) return ActionType.BUY;
-        if (available.contains(ActionType.TAKE_THREE)) return ActionType.TAKE_THREE;
-        return available.get(0);
-    }
-
-    private Map<GemType, Integer> aiChooseTake3() {
-        Map<GemType, Integer> chosen = new EnumMap<>(GemType.class);
-        for (GemType gem : GemType.values()) {
-            if (gem == GemType.GOLD) continue;
-            if (board.getGemBank().getOrDefault(gem, 0) > 0) {
-                chosen.put(gem, 1);
-                if (chosen.size() == 3) break;
-            }
-        }
-        return chosen;
-    }
-
-    private GemType aiChooseTake2() {
-        for (GemType gem : GemType.values()) {
-            if (gem == GemType.GOLD) continue;
-            if (board.getGemBank().getOrDefault(gem, 0) >= 4) {
-                return gem;
-            }
-        }
-        return GemType.RUBY; // fallback
-    }
-
-    private int[] aiChooseReserve() {
-        // Reserve first available visible card
-        Card[][] visible = board.getVisibleCards();
-        for (int level = 2; level >= 0; level--) {
-            for (int slot = 0; slot < 4; slot++) {
-                if (visible[level][slot] != null) {
-                    return new int[]{level, slot};
-                }
-            }
-        }
-        return new int[]{0, -1}; // fallback: top of level 1 deck
-    }
-
-    private Card aiChooseBuy(Player player) {
-        // Buy first affordable visible card, preferring higher prestige
-        Card[][] visible = board.getVisibleCards();
-        Card best = null;
-        int bestLevel = -1;
-        int bestSlot = -1;
-
-        for (int level = 2; level >= 0; level--) {
-            for (int slot = 0; slot < 4; slot++) {
-                Card c = visible[level][slot];
-                if (c != null && validator.canBuy(player, c)) {
-                    if (best == null || c.getPrestigePoints() > best.getPrestigePoints()) {
-                        best = c;
-                        bestLevel = level;
-                        bestSlot = slot;
-                    }
-                }
-            }
-        }
-
-        // Also check reserved cards
-        for (Card c : player.getReservedCards()) {
-            if (validator.canBuy(player, c)) {
-                if (best == null || c.getPrestigePoints() > best.getPrestigePoints()) {
-                    best = c;
-                }
-            }
-        }
-
-        return best;
-    }
-
-    private Map<GemType, Integer> aiChooseDiscard(Player player, int excess) {
-        Map<GemType, Integer> toDiscard = new EnumMap<>(GemType.class);
-        int remaining = excess;
-
-        // Discard gold first, then least useful gems
-        for (GemType gem : new GemType[]{GemType.GOLD, GemType.RUBY, GemType.EMERALD,
-                GemType.SAPPHIRE, GemType.DIAMOND, GemType.ONYX}) {
-            int held = player.getGems().getOrDefault(gem, 0);
-            if (held > 0 && remaining > 0) {
-                int discard = Math.min(held, remaining);
-                toDiscard.put(gem, discard);
-                remaining -= discard;
-            }
-            if (remaining <= 0) break;
-        }
-
-        return toDiscard;
-    }
 }

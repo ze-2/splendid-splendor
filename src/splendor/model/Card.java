@@ -6,6 +6,7 @@ public class Card {
     private GemType bonusGem; // permanent discount 
     private int prestigePoints;
     private Map<GemType, Integer> cost; // what the player pays
+    private boolean hidden = false;
 
 
     public Card (int level, GemType bonusGem, int prestigePoints, Map<GemType, Integer> cost) {
@@ -27,12 +28,15 @@ public class Card {
         return prestigePoints;
     }
 
-    public Map<GemType, Integer> getCost () {
-        return cost;
+    public boolean setHidden(){
+        hidden = true;
+    }
+    public boolean isHidden(){
+        return hidden;
     }
 
-    public boolean isHidden() {
-        return false;
+    public Map<GemType, Integer> getCost () {
+        return cost;
     }
 
     public String toString () {

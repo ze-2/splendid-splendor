@@ -1,11 +1,11 @@
-prestige_points,ruby,emerald,sapphire,diamond,onyx
-3,0,0,4,4,0
-3,0,0,0,4,4
-3,0,4,4,0,0
-3,4,4,0,0,0
-3,4,0,0,0,4
-3,0,0,3,3,3
-3,3,3,0,3,0
-3,3,3,3,0,0
-3,3,0,3,0,3
-3,0,3,0,3,3
+prestige_points,ruby,emerald,sapphire,diamond,onyx,name
+3,0,0,4,4,0,Yeow Leong
+3,0,0,0,4,4,Lay Foo
+3,0,4,4,0,0,Kar Lok
+3,4,4,0,0,0,Joseph
+3,4,0,0,0,4,Jia Wen
+3,0,0,3,3,3,Wei Sin
+3,3,3,0,3,0,Rayner
+3,3,3,3,0,0,Htet
+3,3,0,3,0,3,Azeez
+3,0,3,0,3,3,Kar Xing

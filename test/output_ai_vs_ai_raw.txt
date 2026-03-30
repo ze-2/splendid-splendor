@@ -1,0 +1,3116 @@
+Enter number of players (2-4): Enter name for Player 1: Is Player 1 human or AI? (human/ai): Enter name for Player 2: Is Player 2 human or AI? (human/ai): 
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 4
+  [EMERALD, Green]: 4
+  [SAPPHIRE, Blue]: 4
+  [DIAMOND, White]: 4
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [4] (empty)
+  Deck: 37 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: (none)
+  Bonuses: (none)
+  Purchased Cards: 0
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: (none)
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 4
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 3
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [4] (empty)
+  Deck: 37 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: (none)
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 4
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [4] (empty)
+  Deck: 37 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 3
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [4] (empty)
+  Deck: 37 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 2
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [4] (empty)
+  Deck: 37 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 3
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 36 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 36 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 3, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 36 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 3, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: (none)
+  Purchased Cards: 0
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 35 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1
+  Purchased Cards: 1
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 35 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1
+  Purchased Cards: 1
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [4] (empty)
+  Deck: 35 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1
+  Purchased Cards: 1
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 4
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 34 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1, [GOLD, Yellow] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1
+  Purchased Cards: 1
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 4
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 33 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2, [DIAMOND, White] = 1, [GOLD, Yellow] = 1
+  Bonuses: [RUBY, Red]=1
+  Purchased Cards: 1
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [ONYX, Black]=1
+  Purchased Cards: 2
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 4
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=1, [ONYX, Black]=2}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 32 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1
+  Bonuses: [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 2
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [ONYX, Black]=1
+  Purchased Cards: 2
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 3
+  [DIAMOND, White]: 4
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 31 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1
+  Bonuses: [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 2
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=2, [ONYX, Black]=1
+  Purchased Cards: 3
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 3
+  [DIAMOND, White]: 4
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 30 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=2, [ONYX, Black]=1
+  Purchased Cards: 3
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 4
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 30 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [ONYX, Black]=1
+  Purchased Cards: 3
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 30 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [ONYX, Black]=1
+  Purchased Cards: 3
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 29 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 29 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 29 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1
+  Purchased Cards: 3
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 28 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=1
+  Purchased Cards: 4
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [4] (empty)
+  Deck: 28 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=1
+  Purchased Cards: 4
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2
+  Purchased Cards: 5
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=1, [ONYX, Black]=1
+  Purchased Cards: 4
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 3
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=4, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2
+  Purchased Cards: 5
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 2
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 5
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=4, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2
+  Purchased Cards: 5
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 0
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 2
+  Bonuses: [EMERALD, Green]=2, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 5
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 25 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2
+  Purchased Cards: 5
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 1
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 6
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=3, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 27 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 24 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 6
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 6
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 24 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 6
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 2
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 2
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 2
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 23 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 7
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 2
+  Gems: [EMERALD, Green] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 23 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=1, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 7
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 3, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 1
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 8
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 3, [SAPPHIRE, Blue] = 2
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=2, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 0]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 8
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 4, [SAPPHIRE, Blue] = 3
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 0
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=6, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 3]
+  [4] (empty)
+  Deck: 26 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=4, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 9
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 4, [SAPPHIRE, Blue] = 3
+  Bonuses: [EMERALD, Green]=2, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 7
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 4
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 25 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=4, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 9
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 3
+  Bonuses: [EMERALD, Green]=3, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 8
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 25 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=4, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 9
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 3
+  Bonuses: [EMERALD, Green]=3, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 8
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 1
+  [ONYX, Black]: 2
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 25 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=4, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 1]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 1
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 2, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=1
+  Purchased Cards: 9
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=3, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 8
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 2
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=3}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 25 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [4] (empty)
+  Deck: 20 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 10
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=3, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 8
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 3
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 24 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [4] (empty)
+  Deck: 20 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 2
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [ONYX, Black] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=3, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 10
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 9
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=1, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 23 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [4] (empty)
+  Deck: 20 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 3
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=4, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 11
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 9
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=1, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 23 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 19 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 3
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=2, [RUBY, Red]=4, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 11
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=3
+  Purchased Cards: 10
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=3}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 19 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=4, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 12
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 2, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=3
+  Purchased Cards: 10
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=3, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 18 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=4, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 12
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=4
+  Purchased Cards: 11
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 13
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=2, [ONYX, Black]=4
+  Purchased Cards: 11
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 3
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 16 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 2, [SAPPHIRE, Blue] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 13
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 12
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}, Bonus Gem Colour: [EMERALD, Green], Prestige Points: 1]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 16 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 13
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 6
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=4, [DIAMOND, White]=1, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 12
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=1, [DIAMOND, White]=1, [RUBY, Red]=1, [SAPPHIRE, Blue]=1, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 15 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=2
+  Purchased Cards: 13
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 7
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=1, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 13
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 22 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 14 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=3
+  Purchased Cards: 14
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 7
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=1, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 13
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=1, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 14 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=3, [SAPPHIRE, Blue]=3, [ONYX, Black]=3}
+  [3] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 5
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=2, [ONYX, Black]=3
+  Purchased Cards: 14
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 14
+
+=== AlphaAI's Turn ===
+AlphaAI is visited by a noble! (+3 prestige)
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=1, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 13 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=3
+  Purchased Cards: 15
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 1
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 14
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 2
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=1, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 12 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=4}
+  [2] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 3, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=3
+  Purchased Cards: 15
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 1
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=3, [RUBY, Red]=1, [ONYX, Black]=4
+  Purchased Cards: 15
+
+=== AlphaAI's Turn ===
+AlphaAI is visited by a noble! (+3 prestige)
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 0
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=0, [ONYX, Black]=2}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 1]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 21 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 11 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 11
+  Gems: [RUBY, Red] = 3, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 16
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 2
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 8
+  Gems: [RUBY, Red] = 1, [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=3, [RUBY, Red]=1, [ONYX, Black]=4
+  Purchased Cards: 15
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 0
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=2, [SAPPHIRE, Blue]=4, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 2]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 20 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 11 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 11
+  Gems: [RUBY, Red] = 3, [SAPPHIRE, Blue] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=4
+  Purchased Cards: 16
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 2
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 9
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=4, [RUBY, Red]=1, [ONYX, Black]=4
+  Purchased Cards: 16
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 1
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=7, [ONYX, Black]=0}, Bonus Gem Colour: [ONYX, Black], Prestige Points: 5]
+  [4] (empty)
+  Deck: 17 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=5, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 19 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 11 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 13
+  Gems: [RUBY, Red] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=5
+  Purchased Cards: 17
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 2
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 9
+  Gems: [EMERALD, Green] = 1, [SAPPHIRE, Blue] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=4, [RUBY, Red]=1, [ONYX, Black]=4
+  Purchased Cards: 16
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 4
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=7, [RUBY, Red]=3, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 5]
+  [4] (empty)
+  Deck: 16 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=5, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 19 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 11 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status(You) ---
+  Prestige Points: 13
+  Gems: [RUBY, Red] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=3, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=5
+  Purchased Cards: 17
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 2
+
+
+--- BetaAI's Status  ---
+  Prestige Points: 14
+  Gems: [EMERALD, Green] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=4, [RUBY, Red]=1, [ONYX, Black]=5
+  Purchased Cards: 17
+
+=== AlphaAI's Turn ===
+
+========================================
+              GAME BOARD                
+========================================
+
+--- Gem Bank ---
+  [RUBY, Red]: 1
+  [EMERALD, Green]: 3
+  [SAPPHIRE, Blue]: 4
+  [DIAMOND, White]: 2
+  [ONYX, Black]: 4
+  [GOLD, Yellow]: 5
+
+--- Level 3 Cards ---
+  [1] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=6, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 4]
+  [2] [Level: 3, Gem Cost: {[EMERALD, Green]=3, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=3, [ONYX, Black]=6}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 4]
+  [3] [Level: 3, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=7, [RUBY, Red]=3, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 5]
+  [4] (empty)
+  Deck: 16 cards remaining
+
+--- Level 2 Cards ---
+  [1] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=5, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 2]
+  [2] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=6, [ONYX, Black]=0}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 3]
+  [3] [Level: 2, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=5}, Bonus Gem Colour: [SAPPHIRE, Blue], Prestige Points: 2]
+  [4] (empty)
+  Deck: 18 cards remaining
+
+--- Level 1 Cards ---
+  [1] [Level: 1, Gem Cost: {[EMERALD, Green]=0, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=3}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [2] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=2, [ONYX, Black]=0}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [3] [Level: 1, Gem Cost: {[EMERALD, Green]=2, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=1}, Bonus Gem Colour: [DIAMOND, White], Prestige Points: 0]
+  [4] (empty)
+  Deck: 11 cards remaining
+
+--- Nobles ---
+  [1] Noble: 3 points, requires{[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=4, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}
+
+
+--- AlphaAI's Status  ---
+  Prestige Points: 15
+  Gems: [RUBY, Red] = 3, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=1, [DIAMOND, White]=4, [RUBY, Red]=5, [SAPPHIRE, Blue]=3, [ONYX, Black]=5
+  Purchased Cards: 18
+  Reserved Cards:
+    [1] [Level: 1, Gem Cost: {[EMERALD, Green]=4, [DIAMOND, White]=0, [RUBY, Red]=0, [SAPPHIRE, Blue]=0, [ONYX, Black]=0}, Bonus Gem Colour: [RUBY, Red], Prestige Points: 1]
+  Nobles: 2
+
+
+--- BetaAI's Status(You) ---
+  Prestige Points: 14
+  Gems: [EMERALD, Green] = 1, [DIAMOND, White] = 1
+  Bonuses: [EMERALD, Green]=5, [DIAMOND, White]=2, [SAPPHIRE, Blue]=4, [RUBY, Red]=1, [ONYX, Black]=5
+  Purchased Cards: 17
+
+=== BetaAI's Turn ===
+
+========================================
+              GAME OVER!                
+========================================
+BetaAI wins with 16 prestige points and 18 purchased cards!

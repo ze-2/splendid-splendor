@@ -71,10 +71,24 @@ public class GameEngine {
     // ── Single turn ──────────────────────────────────────────────────
 
     private void playTurn(Player player) {
-        // Step 1: Choose and execute action
-        ActionType action = chooseAction(player);
-        if (action != null) {
-            executeAction(player, action);
+        // Step 1: Choose and execute action (loop if player backs out)
+        boolean actionDone = false;
+        while (!actionDone) {
+            ActionType action = chooseAction(player);
+            if (action != null) {
+                actionDone = executeAction(player, action);
+                if (!actionDone) {
+                    // Player backed out — redraw the screen cleanly
+                    ui.clearScreen();
+                    ui.displayBoard(board);
+                    for (Player p : players) {
+                        ui.displayPlayerStatus(p, p == player);
+                    }
+                    ui.displayTurnHeader(player);
+                }
+            } else {
+                actionDone = true; // no actions available, pass turn
+            }
         }
 
         // Step 2: Handle discard if over 10 gems
@@ -97,30 +111,29 @@ public class GameEngine {
 
     // ── Action dispatch ──────────────────────────────────────────────
 
-    private void executeAction(Player player, ActionType action) {
+    private boolean executeAction(Player player, ActionType action) {
         switch (action) {
             case TAKE_THREE:
-                executeTake3(player);
-                break;
+                return executeTake3(player);
             case TAKE_TWO:
-                executeTake2(player);
-                break;
+                return executeTake2(player);
             case RESERVE:
-                executeReserve(player);
-                break;
+                return executeReserve(player);
             case BUY:
-                executeBuy(player);
-                break;
+                return executeBuy(player);
+            default:
+                return true;
         }
     }
 
     // ── Execute: Take 3 different gems ───────────────────────────────
 
-    private void executeTake3(Player player) {
+    private boolean executeTake3(Player player) {
         Map<GemType, Integer> chosen;
 
         if (player instanceof HumanPlayer) {
             chosen = ui.promptTake3Gems(board, validator);
+            if (chosen == null) return false;
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseTake3Gems(board, validator)
             chosen = aiChooseTake3();
@@ -130,15 +143,17 @@ public class GameEngine {
         for (Map.Entry<GemType, Integer> entry : chosen.entrySet()) {
             player.addGem(entry.getKey(), entry.getValue());
         }
+        return true;
     }
 
     // ── Execute: Take 2 same colour ─────────────────────────────────
 
-    private void executeTake2(Player player) {
+    private boolean executeTake2(Player player) {
         GemType colour;
 
         if (player instanceof HumanPlayer) {
             colour = ui.promptTake2Gems(board, validator);
+            if (colour == null) return false;
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseTake2Gems(board, validator)
             colour = aiChooseTake2();
@@ -148,15 +163,17 @@ public class GameEngine {
         toTake.put(colour, 2);
         board.takeGems(toTake);
         player.addGem(colour, 2);
+        return true;
     }
 
     // ── Execute: Reserve a card ──────────────────────────────────────
 
-    private void executeReserve(Player player) {
+    private boolean executeReserve(Player player) {
         int[] selection;
 
         if (player instanceof HumanPlayer) {
             selection = ui.promptReserveCard(player, board, validator);
+            if (selection == null) return false;
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseReserveCard(board, validator)
             selection = aiChooseReserve();
@@ -182,15 +199,17 @@ public class GameEngine {
             board.takeGems(goldTake);
             player.addGem(GemType.GOLD, 1);
         }
+        return true;
     }
 
     // ── Execute: Buy a card ──────────────────────────────────────────
 
-    private void executeBuy(Player player) {
+    private boolean executeBuy(Player player) {
         Card card;
 
         if (player instanceof HumanPlayer) {
             card = ui.promptBuyCard(player, board, validator);
+            if (card == null) return false;
         } else {
             // TODO: Replace with ((AIPlayer) player).chooseBuyCard(board, validator)
             card = aiChooseBuy(player);
@@ -204,6 +223,7 @@ public class GameEngine {
 
         // Return spent gems to bank
         board.returnGems(spent);
+        return true;
     }
 
     /**

@@ -1,1 +1,1 @@
-find src -name "*.java" | xargs javac -d classes 2>&1
+javac -sourcepath src -d classes src/splendor/SplendorGame.java

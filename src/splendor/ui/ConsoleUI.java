@@ -194,7 +194,7 @@ public class ConsoleUI {
      * Affects whether hidden cards are shown
      */
     public void displayPlayerStatus(Player player, boolean isCurrPlayer) {
-        String tag = isCurrPlayer ? "" : BOLD + " (You)" + RESET;
+        String tag = isCurrPlayer ? BOLD + " (You)" + RESET : "";
         System.out.printf("%n  %s%s%s%s%n", BOLD, player.getName(), RESET, tag);
 
         // Prestige points
@@ -412,14 +412,16 @@ public class ConsoleUI {
             System.out.printf("    %s[%d]%s %s  %s(%d available)%s%n",
                     DIM, i + 1, RESET, colourGem(gem), DIM, count, RESET);
         }
+        System.out.printf("    %s[0]%s Go back%n", DIM, RESET);
         System.out.println();
 
         Map<GemType, Integer> selected = new EnumMap<>(GemType.class);
         for (int i = 0; i < toTake; i++) {
             while (true) {
                 int choice = readInt(
-                        String.format("  Choose gem %d of %d: ", i + 1, toTake),
-                        1, availableGems.size());
+                        String.format("  Choose gem %d of %d (0 to go back): ", i + 1, toTake),
+                        0, availableGems.size());
+                if (choice == 0) return null;
                 GemType gem = availableGems.get(choice - 1);
                 if (selected.containsKey(gem)) {
                     System.out.println("  " + RED + "Already selected. Choose a different gem." + RESET);
@@ -450,9 +452,11 @@ public class ConsoleUI {
             System.out.printf("    %s[%d]%s %s  %s(%d available)%s%n",
                     DIM, i + 1, RESET, colourGem(gem), DIM, count, RESET);
         }
+        System.out.printf("    %s[0]%s Go back%n", DIM, RESET);
         System.out.println();
 
-        int choice = readInt("  Choose gem colour: ", 1, eligible.size());
+        int choice = readInt("  Choose gem colour (0 to go back): ", 0, eligible.size());
+        if (choice == 0) return null;
         return eligible.get(choice - 1);
     }
 
@@ -482,9 +486,11 @@ public class ConsoleUI {
                 idx++;
             }
         }
+        System.out.printf("    %s[0]%s Go back%n", DIM, RESET);
         System.out.println();
 
-        int choice = readInt("  Choose card to reserve: ", 1, options.size());
+        int choice = readInt("  Choose card to reserve (0 to go back): ", 0, options.size());
+        if (choice == 0) return null;
         return options.get(choice - 1);
     }
 
@@ -519,9 +525,11 @@ public class ConsoleUI {
                 }
             }
         }
+        System.out.printf("    %s[0]%s Go back%n", DIM, RESET);
         System.out.println();
 
-        int choice = readInt("  Choose card to buy: ", 1, options.size());
+        int choice = readInt("  Choose card to buy (0 to go back): ", 0, options.size());
+        if (choice == 0) return null;
         return options.get(choice - 1);
     }
 

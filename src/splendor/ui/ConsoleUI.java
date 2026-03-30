@@ -112,7 +112,31 @@ public class ConsoleUI {
     }
 
     // ── Display methods ─────────────────────────────────────────────
-
+    
+    public int displayMainMenu() {
+        clearScreen();
+        System.out.println("  ____  ____  _      _____ _   _ ____  _ ____  ");
+        System.out.println(" / ___||  _ \\| |    | ____| \\ | |  _ \\(_)  _ \\ ");
+        System.out.println(" \\___ \\| |_) | |    |  _| |  \\| | | | | | | | |");
+        System.out.println("  ___) |  __/| |___ | |___| |\\  | |_| | | |_| |");
+        System.out.println(" |____/|_|   |_____||_____|_| \\_|____/|_|____/ ");
+        System.out.println("  ____  ____  _      _____ _   _ ____   ___  ____ ");
+        System.out.println(" / ___||  _ \\| |    | ____| \\ | |  _ \\ / _ \\|  _ \\");
+        System.out.println(" \\___ \\| |_) | |    |  _| |  \\| | | | | | | | |_) |");
+        System.out.println("  ___) |  __/| |___ | |___| |\\  | |_| | |_| |  _ < ");
+        System.out.println(" |____/|_|   |_____||_____|_| \\_|____/ \\___/|_| \\_\\");
+        System.out.println("");
+        System.out.println("                    .---.");
+        System.out.println("                    |[#]|");
+        System.out.println("                    '---'");
+        System.out.println("");
+        System.out.println("               [ 1 ]  S T A R T");
+        System.out.println("               [ 2 ]  S E T T I N G S");
+        System.out.println("               [ 3 ]  E X I T");
+        
+        return readInt("  Menu select: ", 1, 3);
+    }
+    
     /**
      * Displays the current board.
      * @param board the board

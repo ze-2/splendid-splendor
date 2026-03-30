@@ -10,11 +10,21 @@ import splendor.engine.*;
 
 public class SplendorGame {
     public static void main(String[] args) throws IOException {
+        // main menu
+        ConsoleUI ui = new ConsoleUI();
+        
+        int startStatus = ui.displayMainMenu();
+        if (startStatus == 2) {
+            // settings
+            return;
+        } else if (startStatus == 3) {
+            return;
+        }
+        ui.clearScreen();
         //load game config 
         GameConfig config = new GameConfig();
         config.load("config.properties");
-
-        ConsoleUI ui = new ConsoleUI();
+        
         // asking number of players 
         int numOfPlayers = ui.promptPlayerCount();
 
@@ -24,8 +34,8 @@ public class SplendorGame {
         String name;
         String type;
         for (int i = 0; i < numOfPlayers; i++) {
-            name = ui.promptPlayerName(i + 1);
-            type = ui.promptPlayerType(i + 1).trim().toLowerCase(); 
+            name = ui.promptPlayerName(i);
+            type = ui.promptPlayerType(i).trim().toLowerCase(); 
 
             Player p;
 
@@ -36,9 +46,6 @@ public class SplendorGame {
                 p = new AIPlayer(name, players);
             } else {
                 p = null;
-            }
-            else {
-                throw new IllegalArgumentException("Invalid player type: " + type);
             }
             // create player list
             players.add(p);
@@ -62,10 +69,7 @@ public class SplendorGame {
         ActionValidator actionValidator = new ActionValidator();
 
         GameEngine engine = new GameEngine(players, board, ui, config, winChecker, actionValidator);
-        WinChecker winChecker = new WinChecker();
-        ActionValidator validator = new ActionValidator();
 
-        GameEngine engine = new GameEngine(players, board, ui, config, winChecker, validator);
         engine.start();
 
     }

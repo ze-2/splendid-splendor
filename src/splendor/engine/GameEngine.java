@@ -244,7 +244,7 @@ public class GameEngine {
         List<Noble> eligible = new ArrayList<>();
 
         for (Noble noble : board.getNobles()) {
-            if (canVisit(noble, player)) {
+            if (noble.canVisit(player)) {
                 eligible.add(noble);
             }
         }
@@ -267,21 +267,4 @@ public class GameEngine {
         System.out.println(player.getName() + " is visited by a noble! (+3 prestige)");
     }
 
-    /**
-     * Checks if a noble's bonus gem requirements are met by the player.
-     * Inline helper until Noble.canVisit(Player) is added to the model class.
-     */
-    private boolean canVisit(Noble noble, Player player) {
-        Map<GemType, Integer> bonuses = player.getBonusGems();
-        for (Map.Entry<GemType, Integer> entry : noble.getRequirements().entrySet()) {
-            if (entry.getValue() > 0) {
-                int has = bonuses.getOrDefault(entry.getKey(), 0);
-                if (has < entry.getValue()) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-    
 }

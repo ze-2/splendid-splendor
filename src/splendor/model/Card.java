@@ -32,7 +32,7 @@ public class Card {
     }
 
     public boolean isHidden() {
-        return false; // TODO: P1 to add hidden field + constructor param
+        return false;
     }
 
     public String toString () {

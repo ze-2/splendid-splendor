@@ -222,6 +222,16 @@ public class ConsoleUI {
         }
         System.out.println(bonusJoiner.length() > 0 ? bonusJoiner : DIM + "(none)" + RESET);
 
+        // Total
+        System.out.print("    " + DIM + "Total:   " + RESET);
+        StringJoiner totalJoiner = new StringJoiner("  ");
+        for (GemType gem: GemType.values()) {
+            int sum = player.getGems().getOrDefault(gem, 0) + bonuses.getOrDefault(gem, 0);
+            if (sum > 0) {
+                totalJoiner.add(colourGemShort(gem, sum));
+            }
+        }
+        System.out.println(totalJoiner.length() > 0 ? totalJoiner : DIM + "(none)" + RESET);
         // Cards
         System.out.printf("    %sCards:   %s%d purchased%n",
                 DIM, RESET, player.getPurchasedCardCount());

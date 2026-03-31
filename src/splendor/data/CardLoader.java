@@ -2,6 +2,7 @@ package splendor.data;
 
 import splendor.model.Card;
 import splendor.model.GemType;
+import splendor.config.GameConfig;
 
 import java.io.*;
 import java.util.*;
@@ -19,11 +20,11 @@ public class CardLoader {
      *
      * @throws FileNotFoundException if any CSV file cannot be found
      */
-    public CardLoader() throws FileNotFoundException {
+    public CardLoader(GameConfig config) throws FileNotFoundException {
         String[] paths = {
-            "data/cards_level1.csv",
-            "data/cards_level2.csv",
-            "data/cards_level3.csv"
+             config.getCardDataPath(1),
+             config.getCardDataPath(2),
+             config.getCardDataPath(3)
         };
 
         for (int i = 0; i < 3; i++) {

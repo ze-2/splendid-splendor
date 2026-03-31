@@ -18,9 +18,6 @@ public class SplendorGame {
         
         int startStatus = ui.displayMainMenu();
         if (startStatus == 2) {
-            // settings
-            return;
-        } else if (startStatus == 3) {
             return;
         }
         ui.clearScreen();

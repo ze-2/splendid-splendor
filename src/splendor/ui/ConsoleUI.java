@@ -131,10 +131,9 @@ public class ConsoleUI {
         System.out.println("                    '---'");
         System.out.println("");
         System.out.println("               [ 1 ]  S T A R T");
-        System.out.println("               [ 2 ]  S E T T I N G S");
-        System.out.println("               [ 3 ]  E X I T");
+        System.out.println("               [ 2 ]  E X I T");
         
-        return readInt("  Menu select: ", 1, 3);
+        return readInt("  Menu select: ", 1, 2);
     }
     
     /**

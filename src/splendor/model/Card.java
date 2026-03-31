@@ -28,7 +28,7 @@ public class Card {
         return prestigePoints;
     }
 
-    public boolean setHidden(){
+    public void setHidden(){
         hidden = true;
     }
     public boolean isHidden(){

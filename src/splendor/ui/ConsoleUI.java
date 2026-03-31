@@ -56,8 +56,8 @@ public class ConsoleUI {
             case RUBY:    return "\u25C6"; // diamond
             case EMERALD: return "\u25C6";
             case SAPPHIRE:return "\u25C6";
-            case DIAMOND: return "\u25C7"; // hollow diamond
-            case ONYX:    return "\u25C6";
+            case DIAMOND: return "\u25C6"; // filled diamond
+            case ONYX:    return "\u25C7"; // hollow diamond
             case GOLD:    return "\u2605"; // star
             default:      return "\u25CF";
         }

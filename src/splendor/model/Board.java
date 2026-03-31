@@ -63,9 +63,8 @@ public class Board {
         }
 
         // Reveal Noble cards
-        List<Noble> shuffled = nobles;
-        Collections.shuffle(shuffled);
-        this.nobles = shuffled;
+        Collections.shuffle(nobles);
+        this.nobles = new ArrayList<>(nobles.subList(0, numPlayers + 1));
     }
     
     //Getters-----------------------------------------------------------------

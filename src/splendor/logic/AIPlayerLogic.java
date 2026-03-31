@@ -15,14 +15,27 @@ import splendor.model.Player;
 
 public class AIPlayerLogic implements PlayerLogic {
 
+    /* Current state of face up cards, updated every time chooseAction is called */
     private Card[][] boardVisibleCards;
     private final List<Player> players;
+    
+    /*
+     * When gem bonuses exceed 7, consider as late game.
+     * (Gem bonus tends to drive the game more than prestige)
+     */
     private boolean isLateGame = false;
 
     public AIPlayerLogic(List<Player> players) {
         this.players = players;
     }
 
+    /**
+     * @param player    The current player making the move.
+     * @param board     The current game board.
+     * @param validator The action validator to check legal moves.
+     * @return The chosen ActionType to execute, or null if no actions are
+     * available.
+     */
     @Override
     public ActionType chooseAction(Player player, Board board, ActionValidator validator) {
         boardVisibleCards = board.getVisibleCards();
@@ -38,10 +51,14 @@ public class AIPlayerLogic implements PlayerLogic {
             return null;
         }
 
+        // 1. If we have a good card we can afford, buying is almost always the best
+        // engine move.
         if (available.contains(ActionType.BUY) && chooseBuyCard(player, board, validator) != null) {
             return ActionType.BUY;
         }
 
+        // 2. Smart Reserve: If we are near the gem limit (8+ gems) and can't buy,
+        // reserving a high-value/threat target prevents wasted turns discarding.
         int totalGems = 0;
         for (int v : player.getGems().values()) {
             totalGems += v;
@@ -50,6 +67,7 @@ public class AIPlayerLogic implements PlayerLogic {
             return ActionType.RESERVE;
         }
 
+        // 3. Take gems to work towards our single highest-scoring target card.
         if (available.contains(ActionType.TAKE_THREE)) {
             return ActionType.TAKE_THREE;
         }
@@ -57,6 +75,7 @@ public class AIPlayerLogic implements PlayerLogic {
             return ActionType.TAKE_TWO;
         }
 
+        // Fallback
         if (available.contains(ActionType.RESERVE)) {
             return ActionType.RESERVE;
         }
@@ -64,6 +83,14 @@ public class AIPlayerLogic implements PlayerLogic {
         return null;
     }
 
+    /**
+     * Find all available cards, and choose the best option.
+     *
+     * @param player    The current player.
+     * @param board     The current game board.
+     * @param validator The action validator to check legal moves.
+     * @return The best Card to buy, or null if none are affordable.
+     */
     @Override
     public Card chooseBuyCard(Player player, Board board, ActionValidator validator) {
         List<Card> affordable = new ArrayList<>();
@@ -89,6 +116,16 @@ public class AIPlayerLogic implements PlayerLogic {
         return affordable.get(0);
     }
 
+    /**
+     * Identifies the best overall card (affordable or not) and takes up to 3
+     * different gems for it.
+     *
+     * @param player    The current player.
+     * @param board     The current game board.
+     * @param validator The action validator to check legal moves.
+     * @return A map of the selected GemTypes and their quantities (always 1 each,
+     * max 3 total).
+     */
     @Override
     public Map<GemType, Integer> chooseTake3Gems(Player player, Board board, ActionValidator validator) {
         Map<GemType, Integer> needed = getTargetGems(player, board);
@@ -125,6 +162,15 @@ public class AIPlayerLogic implements PlayerLogic {
         return selected;
     }
 
+    /**
+     * Takes 2 gems of the same colour, prioritizing the gem most needed for our
+     * target card.
+     *
+     * @param player    The current player.
+     * @param board     The current game board.
+     * @param validator The action validator to check legal moves.
+     * @return The selected GemType to take 2 of, or null if no valid option exists.
+     */
     @Override
     public GemType chooseTake2Gems(Player player, Board board, ActionValidator validator) {
         Map<GemType, Integer> needed = getTargetGems(player, board);
@@ -148,6 +194,16 @@ public class AIPlayerLogic implements PlayerLogic {
         return best;
     }
 
+    /**
+     * Reserves a card based on a combination of its value to us and its danger in
+     * the hands of opponents.
+     *
+     * @param player    The current player.
+     * @param board     The current game board.
+     * @param validator The action validator to check legal moves.
+     * @return An int array where index 0 is the level and index 1 is the slot
+     * (0-3). Slot -1 indicates drawing from the deck.
+     */
     @Override
     public int[] chooseReserveCard(Player player, Board board, ActionValidator validator) {
         int bestLevel = -1;
@@ -175,6 +231,7 @@ public class AIPlayerLogic implements PlayerLogic {
             return new int[] { bestLevel, bestSlot };
         }
 
+        // Fallback: Take face down card
         for (int level = 2; level >= 0; level--) {
             if (!board.getDecks()[level].isEmpty()) {
                 return new int[] { level, -1 };
@@ -183,6 +240,15 @@ public class AIPlayerLogic implements PlayerLogic {
         return new int[0];
     }
 
+    /**
+     * Chooses which gems to discard when over the 10-token limit.
+     * Discards gems held in the highest quantities first to maintain color
+     * flexibility.
+     *
+     * @param player The current player.
+     * @param excess The number of gems that must be discarded.
+     * @return A map containing the GemTypes and quantities to discard.
+     */
     @Override
     public Map<GemType, Integer> chooseDiscard(Player player, int excess) {
         Map<GemType, Integer> toDiscard = new EnumMap<>(GemType.class);
@@ -210,14 +276,32 @@ public class AIPlayerLogic implements PlayerLogic {
         return toDiscard;
     }
 
+    /**
+     * Picks a noble when multiple are eligible. Simply takes the first.
+     *
+     * @param player   The current player.
+     * @param eligible A list of Nobles the player has fulfilled requirements for.
+     * @return The chosen Noble, or null if the list is empty.
+     */
     @Override
     public Noble chooseNoble(Player player, List<Noble> eligible) {
         return eligible.get(0);
     }
 
+    // ── Private Helpers ──────────────────────────────────────────────
+
+    /**
+     * Calculates a threat score based on how close opponents are to buying a
+     * high-value card.
+     *
+     * @param player The current player evaluating the threat.
+     * @param card   The card being evaluated.
+     * @return A double representing the threat level of the card to our opponents.
+     */
     private double evaluateOpponentThreat(Player player, Card card) {
         double maxThreat = 0;
 
+        // Only bother blocking cards that yield points or are high tier
         if (card.getPrestigePoints() < 2 && totalCost(card) < 5) {
             return 0;
         }
@@ -229,6 +313,7 @@ public class AIPlayerLogic implements PlayerLogic {
 
             int deficit = calculateDeficitForPlayer(card, opponent);
 
+            // If the opponent is 0-2 gems away from a valuable card, it's a threat
             if (deficit <= 2) {
                 double threat = (card.getPrestigePoints() * 5.0) + ((3 - deficit) * 3.0);
                 if (threat > maxThreat) {
@@ -239,6 +324,14 @@ public class AIPlayerLogic implements PlayerLogic {
         return maxThreat;
     }
 
+    /**
+     * Finds the best card heuristically, and returns the remaining gems needed to buy.
+     *
+     * @param player The current player.
+     * @param board  The current game board.
+     * @return A map representing the exact GemTypes and quantities needed to buy
+     * the target card.
+     */
     private Map<GemType, Integer> getTargetGems(Player player, Board board) {
         Map<GemType, Integer> needed = new EnumMap<>(GemType.class);
         Card target = null;
@@ -270,6 +363,15 @@ public class AIPlayerLogic implements PlayerLogic {
         return needed;
     }
 
+    /**
+     * Scores how good a card is to purchase base on the game phase, the player's
+     * gems
+     *
+     * @param player The player evaluating the card.
+     * @param card   The card to evaluate.
+     * @param board  The current game board.
+     * @return A double representing the strategic value of the card.
+     */
     private double evaluateCard(Player player, Card card, Board board) {
         double score = 0;
 
@@ -294,6 +396,13 @@ public class AIPlayerLogic implements PlayerLogic {
         return score;
     }
 
+    /**
+     * Calculates how many gems a specific player is short to buy a card.
+     *
+     * @param card   The card to check.
+     * @param player The player to check against (can be the AI or an opponent).
+     * @return The number of missing gems (accounting for gold).
+     */
     private int calculateDeficitForPlayer(Card card, Player player) {
         int deficit = 0;
         Map<GemType, Integer> bonuses = player.getBonusGems();
@@ -308,6 +417,12 @@ public class AIPlayerLogic implements PlayerLogic {
         return Math.max(0, deficit - gold);
     }
 
+    /**
+     * Calculates the total gem cost of a card.
+     *
+     * @param card The card to evaluate.
+     * @return The integer sum of all gems required to buy the card.
+     */
     private int totalCost(Card card) {
         int total = 0;
         for (int v : card.getCost().values()) {

@@ -1,16 +1,23 @@
 package splendor.model;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
-import splendor.engine.*;
+import splendor.logic.*;
 
-public abstract class Player {
+public class Player {
 
     private final String name;
     private final Map<GemType, Integer> gems;
     private final List<Card> purchasedCards;
     private final List<Card> reservedCards;
     private final List<Noble> nobles;
+    private PlayerLogic logic;
 
     public Player(String name) {
         this.name = name;
@@ -25,17 +32,16 @@ public abstract class Player {
         }
     }
 
-    // Abstract methods, to be implemented by HumanPlayer and AIPlayer
-    public abstract ActionType chooseAction(Board board, ActionValidator actionValidator);
-    public abstract Map<GemType,Integer> chooseTake3Gems(Board board, ActionValidator actionValidator);
-    public abstract GemType chooseTake2Gems(Board board, ActionValidator actionValidator);
-    public abstract int[] chooseReserveCard(Board board, ActionValidator actionValidator);
-    public abstract Card chooseBuyCard(Board board, ActionValidator actionValidator);
-    public abstract Map<GemType, Integer> chooseDiscard(int excess);
-    public abstract Noble chooseNoble(List<Noble> nobles);
-
     public String getName() {
         return name;
+    }
+
+    public PlayerLogic getLogic() {
+        return logic;
+    }
+
+    public void setLogic(PlayerLogic logic) {
+        this.logic = Objects.requireNonNull(logic, "logic");
     }
 
     // assumes the canBuy validator is ran before (invoked by gameEngine)

@@ -2,7 +2,7 @@ package splendor.data;
 
 import splendor.model.Noble;
 import splendor.model.GemType;
-import splendor.config.gameConfig;
+import splendor.config.GameConfig;
 
 import java.io.*;
 import java.util.*;

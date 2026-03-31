@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+import splendor.logic.*;
+
 public class Player {
 
     private final String name;
@@ -15,7 +17,7 @@ public class Player {
     private final List<Card> purchasedCards;
     private final List<Card> reservedCards;
     private final List<Noble> nobles;
-    private splendor.logic.PlayerLogic logic;
+    private PlayerLogic logic;
 
     public Player(String name) {
         this.name = name;
@@ -34,14 +36,11 @@ public class Player {
         return name;
     }
 
-    public splendor.logic.PlayerLogic getLogic() {
-        if (logic == null) {
-            throw new IllegalStateException("Player logic has not been assigned for " + name);
-        }
+    public PlayerLogic getLogic() {
         return logic;
     }
 
-    public void setLogic(splendor.logic.PlayerLogic logic) {
+    public void setLogic(PlayerLogic logic) {
         this.logic = Objects.requireNonNull(logic, "logic");
     }
 

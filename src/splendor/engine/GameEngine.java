@@ -1,10 +1,18 @@
 package splendor.engine;
 
-import splendor.model.*;
-import splendor.ui.ConsoleUI;
-import splendor.config.GameConfig;
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import splendor.config.GameConfig;
+import splendor.model.ActionType;
+import splendor.model.Board;
+import splendor.model.Card;
+import splendor.model.GemType;
+import splendor.model.Noble;
+import splendor.model.Player;
+import splendor.ui.ConsoleUI;
 
 public class GameEngine {
 
@@ -101,11 +109,7 @@ public class GameEngine {
     // ── Action selection (human/AI branching) ────────────────────────
 
     private ActionType chooseAction(Player player) {
-        if (player instanceof HumanPlayer) {
-            return ui.promptAction(player, board, validator);
-        } else {
-            return ((AIPlayer) player).chooseAction(board, validator);
-        }
+        return player.getLogic().chooseAction(player, board, validator);
     }
 
     // ── Action dispatch ──────────────────────────────────────────────
@@ -128,13 +132,9 @@ public class GameEngine {
     // ── Execute: Take 3 different gems ───────────────────────────────
 
     private boolean executeTake3(Player player) {
-        Map<GemType, Integer> chosen;
-
-        if (player instanceof HumanPlayer) {
-            chosen = ui.promptTake3Gems(board, validator);
-            if (chosen == null) return false;
-        } else {
-            chosen = ((AIPlayer) player).chooseTake3Gems(board, validator);
+        Map<GemType, Integer> chosen = player.getLogic().chooseTake3Gems(player, board, validator);
+        if (chosen == null) {
+            return false;
         }
 
         board.takeGems(chosen);
@@ -147,13 +147,9 @@ public class GameEngine {
     // ── Execute: Take 2 same colour ─────────────────────────────────
 
     private boolean executeTake2(Player player) {
-        GemType colour;
-
-        if (player instanceof HumanPlayer) {
-            colour = ui.promptTake2Gems(board, validator);
-            if (colour == null) return false;
-        } else {
-            colour = ((AIPlayer) player).chooseTake2Gems(board, validator);
+        GemType colour = player.getLogic().chooseTake2Gems(player, board, validator);
+        if (colour == null) {
+            return false;
         }
 
         Map<GemType, Integer> toTake = new EnumMap<>(GemType.class);
@@ -166,13 +162,9 @@ public class GameEngine {
     // ── Execute: Reserve a card ──────────────────────────────────────
 
     private boolean executeReserve(Player player) {
-        int[] selection;
-
-        if (player instanceof HumanPlayer) {
-            selection = ui.promptReserveCard(player, board, validator);
-            if (selection == null) return false;
-        } else {
-            selection = ((AIPlayer) player).chooseReserveCard(board, validator);
+        int[] selection = player.getLogic().chooseReserveCard(player, board, validator);
+        if (selection == null) {
+            return false;
         }
 
         int level = selection[0];
@@ -201,13 +193,9 @@ public class GameEngine {
     // ── Execute: Buy a card ──────────────────────────────────────────
 
     private boolean executeBuy(Player player) {
-        Card card;
-
-        if (player instanceof HumanPlayer) {
-            card = ui.promptBuyCard(player, board, validator);
-            if (card == null) return false;
-        } else {
-            card = ((AIPlayer) player).chooseBuyCard(board, validator);
+        Card card = player.getLogic().chooseBuyCard(player, board, validator);
+        if (card == null) {
+            return false;
         }
 
         // Remove card from board if it's a visible card
@@ -245,13 +233,7 @@ public class GameEngine {
             return;
         }
 
-        Map<GemType, Integer> toDiscard;
-
-        if (player instanceof HumanPlayer) {
-            toDiscard = ui.promptDiscardGems(player, excess);
-        } else {
-            toDiscard = ((AIPlayer) player).chooseDiscard(excess);
-        }
+        Map<GemType, Integer> toDiscard = player.getLogic().chooseDiscard(player, excess);
 
         for (Map.Entry<GemType, Integer> entry : toDiscard.entrySet()) {
             player.removeGem(entry.getKey(), entry.getValue());
@@ -277,10 +259,8 @@ public class GameEngine {
         Noble chosen;
         if (eligible.size() == 1) {
             chosen = eligible.get(0);
-        } else if (player instanceof HumanPlayer) {
-            chosen = ui.promptNobleChoice(eligible);
         } else {
-            chosen = ((AIPlayer) player).chooseNoble(eligible);
+            chosen = player.getLogic().chooseNoble(player, eligible);
         }
 
         player.addNoble(chosen);

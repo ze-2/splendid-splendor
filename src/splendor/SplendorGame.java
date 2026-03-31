@@ -1,15 +1,22 @@
 package splendor;
 
-import java.util.*;
-import java.io.*;
-import java.util.*;
-import splendor.config.*;
-import splendor.data.*;
-import splendor.ui.*;
-import splendor.model.*;
-import splendor.engine.*;
-import splendor.model.*;
-import splendor.ui.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import splendor.config.GameConfig;
+import splendor.data.CardLoader;
+import splendor.data.NobleLoader;
+import splendor.engine.ActionValidator;
+import splendor.engine.GameEngine;
+import splendor.engine.WinChecker;
+import splendor.logic.AIPlayerLogic;
+import splendor.logic.HumanPlayerLogic;
+import splendor.model.Board;
+import splendor.model.Card;
+import splendor.model.Noble;
+import splendor.model.Player;
+import splendor.ui.ConsoleUI;
 
 public class SplendorGame {
     public static void main(String[] args) throws IOException {
@@ -37,15 +44,12 @@ public class SplendorGame {
             name = ui.promptPlayerName(i);
             type = ui.promptPlayerType(i).trim().toLowerCase(); 
 
-            Player p;
+            Player p = new Player(name);
 
             if (type.equals("human")) {
-                p = new HumanPlayer(name, ui);
-            }
-            else if (type.equals("ai")) {
-                p = new AIPlayer(name, players);
-            } else {
-                p = null;
+                p.setLogic(new HumanPlayerLogic(ui));
+            } else if (type.equals("ai")) {
+                p.setLogic(new AIPlayerLogic(players));
             }
             // create player list
             players.add(p);

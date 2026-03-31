@@ -56,8 +56,8 @@ public class SplendorGame {
         }
 
         // load cards and nobles 
-        CardLoader cardLoader = new CardLoader();
-        NobleLoader nobleLoader = new NobleLoader();
+        CardLoader cardLoader = new CardLoader(config);
+        NobleLoader nobleLoader = new NobleLoader(config);
 
         List<Card> cards = new ArrayList<>();
         cards.addAll(cardLoader.getAllCards(1));

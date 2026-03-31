@@ -2,6 +2,7 @@ package splendor.data;
 
 import splendor.model.Noble;
 import splendor.model.GemType;
+import splendor.config.gameConfig;
 
 import java.io.*;
 import java.util.*;
@@ -18,9 +19,9 @@ public class NobleLoader {
      *
      * @throws FileNotFoundException if the CSV file cannot be found
      */
-    public NobleLoader() throws FileNotFoundException {
+    public NobleLoader(GameConfig config) throws FileNotFoundException {
 
-        File file = new File("data/nobles.csv");
+        File file = new File(config.getNobleDataPath());
         Scanner fr = new Scanner(file);
 
         fr.nextLine(); // skip header

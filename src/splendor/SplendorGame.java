@@ -60,9 +60,9 @@ public class SplendorGame {
         NobleLoader nobleLoader = new NobleLoader(config);
 
         List<Card> cards = new ArrayList<>();
-        cards.addAll(cardLoader.getAllCards(1));
-        cards.addAll(cardLoader.getAllCards(2));
-        cards.addAll(cardLoader.getAllCards(3));
+        cards.addAll(cardLoader.getAvailCards(1));
+        cards.addAll(cardLoader.getAvailCards(2));
+        cards.addAll(cardLoader.getAvailCards(3));
 
         List<Noble> nobles = nobleLoader.getAllNobles();
 

@@ -10,19 +10,19 @@ import splendor.model.Card;
 import splendor.model.GemType;
 import splendor.model.Noble;
 import splendor.model.Player;
-import splendor.ui.ConsoleUI;
+import splendor.ui.ConsoleActionUI;
 
 public class HumanPlayerLogic implements PlayerLogic {
 
-    private final ConsoleUI ui;
+    private final ConsoleActionUI ui;
 
-    public HumanPlayerLogic(ConsoleUI ui) {
+    public HumanPlayerLogic(ConsoleActionUI ui) {
         this.ui = ui;
     }
 
     @Override
     public ActionType chooseAction(Player player, Board board, ActionValidator validator) {
-        return ui.promptAction(player, board, validator);
+        return ui.promptUserAction(player, board, validator);
     }
 
     @Override

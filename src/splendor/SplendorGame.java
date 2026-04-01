@@ -16,36 +16,45 @@ import splendor.model.Board;
 import splendor.model.Card;
 import splendor.model.Noble;
 import splendor.model.Player;
-import splendor.ui.ConsoleUI;
+import splendor.ui.ConsoleActionUI;
+import splendor.ui.ConsoleDisplayUI;
+import splendor.ui.ConsoleFormatter;
+import splendor.ui.ConsoleSetupUI;
+import splendor.ui.ConsoleTerminal;
 
 public class SplendorGame {
     public static void main(String[] args) throws IOException {
+        ConsoleTerminal terminal = new ConsoleTerminal();
+        ConsoleFormatter formatter = new ConsoleFormatter();
+        ConsoleDisplayUI displayUI = new ConsoleDisplayUI(terminal, formatter);
+        ConsoleSetupUI setupUI = new ConsoleSetupUI(terminal, formatter);
+        ConsoleActionUI actionUI = new ConsoleActionUI(terminal, formatter);
+
         // main menu
-        ConsoleUI ui = new ConsoleUI();
         
-        int startStatus = ui.displayMainMenu();
+        int startStatus = setupUI.displayMainMenu();
         if (startStatus == 2) {
             return;
         }
-        ui.clearScreen();
+        displayUI.clearScreen();
         //load game config 
         GameConfig config = new GameConfig();
         config.load("config.properties");
         
         // asking number of players 
-        int numOfPlayers = ui.promptPlayerCount();
+        int numOfPlayers = setupUI.promptPlayerCount();
 
         List<Player> players = new ArrayList<>();
 
         // for each player, ask name and type 
         for (int i = 0; i < numOfPlayers; i++) {
-            String name = ui.promptPlayerName(i);
-            String type = ui.promptPlayerType(i).trim().toLowerCase(); 
+            String name = setupUI.promptPlayerName(i);
+            String type = setupUI.promptPlayerType(i).trim().toLowerCase(); 
 
             Player p = new Player(name);
 
             if (type.equals("human")) {
-                p.setLogic(new HumanPlayerLogic(ui));
+                p.setLogic(new HumanPlayerLogic(actionUI));
             } else if (type.equals("ai")) {
                 p.setLogic(new AIPlayerLogic(players));
             }
@@ -70,7 +79,7 @@ public class SplendorGame {
         WinChecker winChecker = new WinChecker();
         ActionValidator actionValidator = new ActionValidator();
 
-        GameEngine engine = new GameEngine(players, board, ui, config, winChecker, actionValidator);
+        GameEngine engine = new GameEngine(players, board, displayUI, config, winChecker, actionValidator);
 
         engine.start();
 

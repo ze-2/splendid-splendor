@@ -25,6 +25,6 @@ The player with the highest points wins.
 
 ## 4. Installation instructions
 1. Clone the repository: git clone https://github.com/ze-2/splendid-splendor.git
-2. Navigate to the project directory: cd splendor
+2. Navigate to the project directory: cd splendid-splendor
 3. Compile the project: ./compile.sh
 4. Run the game: ./run.sh

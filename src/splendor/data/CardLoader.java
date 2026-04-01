@@ -10,7 +10,6 @@ import java.util.*;
 public class CardLoader {
 
     // Per-level tracking (index 0 = level 1, index 1 = level 2, index 2 = level 3)
-    private Map<Integer, List<Card>> allCards = new HashMap<Integer, List<Card>>();       // all cards ever loaded (never changes)
     private Map<Integer, List<Card>> availCards = new HashMap<Integer, List<Card>>();     // face-down deck cards still available to draw
     private Map<Integer, List<Card>> drawnCards = new HashMap<Integer, List<Card>>();     // all cards that have been drawn
 
@@ -30,12 +29,9 @@ public class CardLoader {
         for (int i = 0; i < 3; i++) {
             int level = i + 1;
             List<Card> loaded = loadCards(paths[i]);
-            allCards.put(level, loaded);
+            availCards.put(level, loaded);
             drawnCards.put(level, new ArrayList<>());
         }
-
-        // init avail cards
-        availCards = allCards;
 
         shuffle();
     }
@@ -94,10 +90,6 @@ public class CardLoader {
 
     public List<Card> getDrawnCards(int level) {
         return drawnCards.get(level);
-    }
-
-    public List<Card> getAllCards(int level) {
-        return allCards.get(level);
     }
 
     public int getDeckSize(int level) {

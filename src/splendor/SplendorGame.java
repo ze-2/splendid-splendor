@@ -38,11 +38,9 @@ public class SplendorGame {
         List<Player> players = new ArrayList<>();
 
         // for each player, ask name and type 
-        String name;
-        String type;
         for (int i = 0; i < numOfPlayers; i++) {
-            name = ui.promptPlayerName(i);
-            type = ui.promptPlayerType(i).trim().toLowerCase(); 
+            String name = ui.promptPlayerName(i);
+            String type = ui.promptPlayerType(i).trim().toLowerCase(); 
 
             Player p = new Player(name);
 

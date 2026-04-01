@@ -12,22 +12,22 @@ import splendor.model.Card;
 import splendor.model.GemType;
 import splendor.model.Noble;
 import splendor.model.Player;
-import splendor.ui.ConsoleUI;
+import splendor.ui.ConsoleDisplayUI;
 
 public class GameEngine {
 
     private final List<Player> players;
     private final Board board;
-    private final ConsoleUI ui;
+    private final ConsoleDisplayUI displayUI;
     private final GameConfig config;
     private final WinChecker winChecker;
     private final ActionValidator validator;
 
-    public GameEngine(List<Player> players, Board board, ConsoleUI ui,
+    public GameEngine(List<Player> players, Board board, ConsoleDisplayUI displayUI,
                       GameConfig config, WinChecker winChecker, ActionValidator validator) {
         this.players = players;
         this.board = board;
-        this.ui = ui;
+        this.displayUI = displayUI;
         this.config = config;
         this.winChecker = winChecker;
         this.validator = validator;
@@ -43,7 +43,7 @@ public class GameEngine {
         }
 
         List<Player> winners = winChecker.getWinners(players);
-        ui.displayWinner(winners);
+        displayUI.displayWinner(winners);
     }
 
     /**
@@ -57,15 +57,15 @@ public class GameEngine {
         for (int i = 0; i < players.size(); i++) {
             Player player = players.get(i);
 
-            ui.clearScreen();
-            ui.displayBoard(board);
+            displayUI.clearScreen();
+            displayUI.displayBoard(board);
 
             // Show all players' statuses
             for (Player p : players) {
-                ui.displayPlayerStatus(p, p == player);
+                displayUI.displayPlayerStatus(p, p == player);
             }
 
-            ui.displayTurnHeader(player);
+            displayUI.displayTurnHeader(player);
             playTurn(player);
 
             if (player.getPrestigePoints() >= config.getWinningPoints()) {
@@ -87,12 +87,12 @@ public class GameEngine {
                 actionDone = executeAction(player, action);
                 if (!actionDone) {
                     // Player backed out — redraw the screen cleanly
-                    ui.clearScreen();
-                    ui.displayBoard(board);
+                    displayUI.clearScreen();
+                    displayUI.displayBoard(board);
                     for (Player p : players) {
-                        ui.displayPlayerStatus(p, p == player);
+                        displayUI.displayPlayerStatus(p, p == player);
                     }
-                    ui.displayTurnHeader(player);
+                    displayUI.displayTurnHeader(player);
                 }
             } else {
                 actionDone = true; // no actions available, pass turn

@@ -22,6 +22,8 @@ import splendor.ui.ConsoleFormatter;
 import splendor.ui.ConsoleSetupUI;
 import splendor.ui.ConsoleTerminal;
 
+// AI was used to check for errors and debugging 
+
 public class SplendorGame {
     public static void main(String[] args) throws IOException {
         ConsoleTerminal terminal = new ConsoleTerminal();

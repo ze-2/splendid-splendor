@@ -1,18 +1,9 @@
 package splendor.engine;
 
-import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
-
-import splendor.config.GameConfig;
-import splendor.model.ActionType;
-import splendor.model.Board;
-import splendor.model.Card;
-import splendor.model.GemType;
-import splendor.model.Noble;
-import splendor.model.Player;
-import splendor.ui.ConsoleDisplayUI;
+import java.util.*;
+import splendor.config.*;
+import splendor.model.*;
+import splendor.ui.*;
 
 public class GameEngine {
 
@@ -33,12 +24,12 @@ public class GameEngine {
         this.validator = validator;
     }
 
-    // ── Main game loop ───────────────────────────────────────────────
+    // Main game loop
 
     public void start() {
         boolean hasWinner = false;
 
-        while (!hasWinner) {
+        while (!hasWinner) {        // while no winner yet, keep playing round
             hasWinner = playRound();
         }
 
@@ -47,9 +38,8 @@ public class GameEngine {
     }
 
     /**
-     * Plays one full round (every player takes one turn).
-     * Returns true if any player reached the winning threshold.
-     * Does NOT break mid-round — all players finish the round.
+     * Plays one full round (every player takes one turn)
+     * Returns true if any player reached the winning threshold
      */
     private boolean playRound() {
         boolean hasWinner = false;
@@ -76,7 +66,7 @@ public class GameEngine {
         return hasWinner;
     }
 
-    // ── Single turn ──────────────────────────────────────────────────
+    // Single player turn
 
     private void playTurn(Player player) {
         // Step 1: Choose and execute action (loop if player backs out)
@@ -106,14 +96,12 @@ public class GameEngine {
         checkNobles(player);
     }
 
-    // ── Action selection (human/AI branching) ────────────────────────
-
+    // Action selection
     private ActionType chooseAction(Player player) {
         return player.getLogic().chooseAction(player, board, validator);
     }
 
-    // ── Action dispatch ──────────────────────────────────────────────
-
+    // Action dispatch
     private boolean executeAction(Player player, ActionType action) {
         switch (action) {
             case TAKE_THREE:
@@ -129,8 +117,7 @@ public class GameEngine {
         }
     }
 
-    // ── Execute: Take 3 different gems ───────────────────────────────
-
+    // Execute Action: Take 3 different gems
     private boolean executeTake3(Player player) {
         Map<GemType, Integer> chosen = player.getLogic().chooseTake3Gems(player, board, validator);
         if (chosen == null) {
@@ -144,7 +131,7 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Take 2 same colour ─────────────────────────────────
+    // Execute Action: Take 2 same colour gems
 
     private boolean executeTake2(Player player) {
         GemType colour = player.getLogic().chooseTake2Gems(player, board, validator);
@@ -152,6 +139,7 @@ public class GameEngine {
             return false;
         }
 
+        // map for enum gem type
         Map<GemType, Integer> toTake = new EnumMap<>(GemType.class);
         toTake.put(colour, 2);
         board.takeGems(toTake);
@@ -159,8 +147,7 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Reserve a card ──────────────────────────────────────
-
+    // Execute Action: Reserve a card
     private boolean executeReserve(Player player) {
         int[] selection = player.getLogic().chooseReserveCard(player, board, validator);
         if (selection == null) {
@@ -190,8 +177,7 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Buy a card ──────────────────────────────────────────
-
+    // Execute Action: Buy a card
     private boolean executeBuy(Player player) {
         Card card = player.getLogic().chooseBuyCard(player, board, validator);
         if (card == null) {
@@ -210,8 +196,8 @@ public class GameEngine {
     }
 
     /**
-     * Removes a card from visible board slots if found.
-     * If the card is from the player's reserved list, buyCard() handles removal.
+     * Removes a card from visible board slots if found
+     * If the card is from the player's reserved list, buyCard() handles removal
      */
     private void removeCardFromBoard(Card card) {
         Card[][] visible = board.getVisibleCards();
@@ -225,8 +211,7 @@ public class GameEngine {
         }
     }
 
-    // ── Handle discard (over 10 gems) ────────────────────────────────
-
+    // Handle discard (if over 10 gems)
     private void handleDiscard(Player player) {
         int excess = player.getTotalGems() - 10;
         if (excess <= 0) {
@@ -241,7 +226,7 @@ public class GameEngine {
         board.returnGems(toDiscard);
     }
 
-    // ── Check noble visits ───────────────────────────────────────────
+    // Check noble visits
 
     private void checkNobles(Player player) {
         List<Noble> eligible = new ArrayList<>();
@@ -259,7 +244,7 @@ public class GameEngine {
         Noble chosen;
         if (eligible.size() == 1) {
             chosen = eligible.get(0);
-        } else {
+        } else {        // player choose if multiple avail
             chosen = player.getLogic().chooseNoble(player, eligible);
         }
 

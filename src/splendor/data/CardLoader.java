@@ -1,8 +1,7 @@
 package splendor.data;
 
-import splendor.model.Card;
-import splendor.model.GemType;
-import splendor.config.GameConfig;
+import splendor.model.*;
+import splendor.config.*;
 
 import java.io.*;
 import java.util.*;
@@ -16,7 +15,6 @@ public class CardLoader {
     /**
      * Loads all development cards from CSV files and prepares shuffled decks.
      * CSV format: level,bonus_gem,prestige_points,ruby,emerald,sapphire,diamond,onyx
-     *
      * @throws FileNotFoundException if any CSV file cannot be found
      */
     public CardLoader(GameConfig config) throws FileNotFoundException {
@@ -37,7 +35,7 @@ public class CardLoader {
     }
 
     /**
-     * Shuffles the available cards for all 3 levels.
+     * Shuffles the available cards for all 3 levels
      */
     public void shuffle() {
         for (int level = 1; level <= 3; level++) {
@@ -47,9 +45,7 @@ public class CardLoader {
 
     /**
      * Draws the top card from a level's face-down deck.
-     *
-     * @param level the card level (1, 2, or 3)
-     * @return the drawn Card, or null if the deck is empty
+     * returns the drawn Card, or null if the deck is empty
      */
     public Card drawCard(int level) {
         List<Card> deck = availCards.get(level);
@@ -63,10 +59,7 @@ public class CardLoader {
 
     /**
      * Draws multiple cards from a level's face-down deck.
-     *
-     * @param level the card level (1, 2, or 3)
-     * @param count number of cards to draw
-     * @return list of drawn Cards (may be smaller than count if deck runs out)
+     * returns list of drawn Cards (may be smaller than count if deck runs out)
      */
     public List<Card> drawCard(int level, int count) {
         List<Card> drawn = new ArrayList<>();
@@ -80,10 +73,7 @@ public class CardLoader {
         return drawn;
     }
 
-    /**
-     * Returns the drawn cards for a level.
-     */
-
+    // Returns the drawn cards for a level
     public List<Card> getAvailCards(int level) {
         return availCards.get(level);
     }
@@ -100,9 +90,7 @@ public class CardLoader {
         return availCards.get(level).isEmpty();
     }
 
-    /**
-     * Parses a single CSV file into a list of Card objects.
-     */
+    // Loads and Parses CSV file into a list of Card objects
     private List<Card> loadCards(String csvPath) throws FileNotFoundException {
         List<Card> cards = new ArrayList<>();
 

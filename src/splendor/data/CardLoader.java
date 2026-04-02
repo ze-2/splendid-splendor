@@ -1,7 +1,7 @@
 package splendor.data;
 
-import splendor.model.Card;
-import splendor.model.GemType;
+import splendor.model.*;
+import splendor.config.*;
 
 import java.io.*;
 import java.util.*;
@@ -9,38 +9,33 @@ import java.util.*;
 public class CardLoader {
 
     // Per-level tracking (index 0 = level 1, index 1 = level 2, index 2 = level 3)
-    private Map<Integer, List<Card>> allCards = new HashMap<Integer, List<Card>>();       // all cards ever loaded (never changes)
     private Map<Integer, List<Card>> availCards = new HashMap<Integer, List<Card>>();     // face-down deck cards still available to draw
     private Map<Integer, List<Card>> drawnCards = new HashMap<Integer, List<Card>>();     // all cards that have been drawn
 
     /**
      * Loads all development cards from CSV files and prepares shuffled decks.
      * CSV format: level,bonus_gem,prestige_points,ruby,emerald,sapphire,diamond,onyx
-     *
      * @throws FileNotFoundException if any CSV file cannot be found
      */
-    public CardLoader() throws FileNotFoundException {
+    public CardLoader(GameConfig config) throws FileNotFoundException {
         String[] paths = {
-            "data/cards_level1.csv",
-            "data/cards_level2.csv",
-            "data/cards_level3.csv"
+             config.getCardDataPath(1),
+             config.getCardDataPath(2),
+             config.getCardDataPath(3)
         };
 
         for (int i = 0; i < 3; i++) {
             int level = i + 1;
             List<Card> loaded = loadCards(paths[i]);
-            allCards.put(level, loaded);
+            availCards.put(level, loaded);
             drawnCards.put(level, new ArrayList<>());
         }
-
-        // init avail cards
-        availCards = allCards;
 
         shuffle();
     }
 
     /**
-     * Shuffles the available cards for all 3 levels.
+     * Shuffles the available cards for all 3 levels
      */
     public void shuffle() {
         for (int level = 1; level <= 3; level++) {
@@ -50,9 +45,7 @@ public class CardLoader {
 
     /**
      * Draws the top card from a level's face-down deck.
-     *
-     * @param level the card level (1, 2, or 3)
-     * @return the drawn Card, or null if the deck is empty
+     * returns the drawn Card, or null if the deck is empty
      */
     public Card drawCard(int level) {
         List<Card> deck = availCards.get(level);
@@ -66,10 +59,7 @@ public class CardLoader {
 
     /**
      * Draws multiple cards from a level's face-down deck.
-     *
-     * @param level the card level (1, 2, or 3)
-     * @param count number of cards to draw
-     * @return list of drawn Cards (may be smaller than count if deck runs out)
+     * returns list of drawn Cards (may be smaller than count if deck runs out)
      */
     public List<Card> drawCard(int level, int count) {
         List<Card> drawn = new ArrayList<>();
@@ -83,20 +73,13 @@ public class CardLoader {
         return drawn;
     }
 
-    /**
-     * Returns the drawn cards for a level.
-     */
-
+    // Returns the drawn cards for a level
     public List<Card> getAvailCards(int level) {
         return availCards.get(level);
     }
 
     public List<Card> getDrawnCards(int level) {
         return drawnCards.get(level);
-    }
-
-    public List<Card> getAllCards(int level) {
-        return allCards.get(level);
     }
 
     public int getDeckSize(int level) {
@@ -107,9 +90,7 @@ public class CardLoader {
         return availCards.get(level).isEmpty();
     }
 
-    /**
-     * Parses a single CSV file into a list of Card objects.
-     */
+    // Loads and Parses CSV file into a list of Card objects
     private List<Card> loadCards(String csvPath) throws FileNotFoundException {
         List<Card> cards = new ArrayList<>();
 

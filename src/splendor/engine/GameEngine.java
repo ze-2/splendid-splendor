@@ -1,47 +1,45 @@
 package splendor.engine;
 
-import splendor.model.*;
-import splendor.ui.ConsoleUI;
-import splendor.config.GameConfig;
-
 import java.util.*;
+import splendor.config.*;
+import splendor.model.*;
+import splendor.ui.*;
 
 public class GameEngine {
 
     private final List<Player> players;
     private final Board board;
-    private final ConsoleUI ui;
+    private final ConsoleDisplayUI displayUI;
     private final GameConfig config;
     private final WinChecker winChecker;
     private final ActionValidator validator;
 
-    public GameEngine(List<Player> players, Board board, ConsoleUI ui,
+    public GameEngine(List<Player> players, Board board, ConsoleDisplayUI displayUI,
                       GameConfig config, WinChecker winChecker, ActionValidator validator) {
         this.players = players;
         this.board = board;
-        this.ui = ui;
+        this.displayUI = displayUI;
         this.config = config;
         this.winChecker = winChecker;
         this.validator = validator;
     }
 
-    // ── Main game loop ───────────────────────────────────────────────
+    // Main game loop
 
     public void start() {
         boolean hasWinner = false;
 
-        while (!hasWinner) {
+        while (!hasWinner) {        // while no winner yet, keep playing round
             hasWinner = playRound();
         }
 
         List<Player> winners = winChecker.getWinners(players);
-        ui.displayWinner(winners);
+        displayUI.displayWinner(winners);
     }
 
     /**
-     * Plays one full round (every player takes one turn).
-     * Returns true if any player reached the winning threshold.
-     * Does NOT break mid-round — all players finish the round.
+     * Plays one full round (every player takes one turn)
+     * Returns true if any player reached the winning threshold
      */
     private boolean playRound() {
         boolean hasWinner = false;
@@ -49,15 +47,15 @@ public class GameEngine {
         for (int i = 0; i < players.size(); i++) {
             Player player = players.get(i);
 
-            ui.clearScreen();
-            ui.displayBoard(board);
+            displayUI.clearScreen();
+            displayUI.displayBoard(board);
 
             // Show all players' statuses
             for (Player p : players) {
-                ui.displayPlayerStatus(p, p == player);
+                displayUI.displayPlayerStatus(p, p == player);
             }
 
-            ui.displayTurnHeader(player);
+            displayUI.displayTurnHeader(player);
             playTurn(player);
 
             if (player.getPrestigePoints() >= config.getWinningPoints()) {
@@ -68,7 +66,7 @@ public class GameEngine {
         return hasWinner;
     }
 
-    // ── Single turn ──────────────────────────────────────────────────
+    // Single player turn
 
     private void playTurn(Player player) {
         // Step 1: Choose and execute action (loop if player backs out)
@@ -79,12 +77,12 @@ public class GameEngine {
                 actionDone = executeAction(player, action);
                 if (!actionDone) {
                     // Player backed out — redraw the screen cleanly
-                    ui.clearScreen();
-                    ui.displayBoard(board);
+                    displayUI.clearScreen();
+                    displayUI.displayBoard(board);
                     for (Player p : players) {
-                        ui.displayPlayerStatus(p, p == player);
+                        displayUI.displayPlayerStatus(p, p == player);
                     }
-                    ui.displayTurnHeader(player);
+                    displayUI.displayTurnHeader(player);
                 }
             } else {
                 actionDone = true; // no actions available, pass turn
@@ -98,18 +96,12 @@ public class GameEngine {
         checkNobles(player);
     }
 
-    // ── Action selection (human/AI branching) ────────────────────────
-
+    // Action selection
     private ActionType chooseAction(Player player) {
-        if (player instanceof HumanPlayer) {
-            return ui.promptAction(player, board, validator);
-        } else {
-            return ((AIPlayer) player).chooseAction(board, validator);
-        }
+        return player.getLogic().chooseAction(player, board, validator);
     }
 
-    // ── Action dispatch ──────────────────────────────────────────────
-
+    // Action dispatch
     private boolean executeAction(Player player, ActionType action) {
         switch (action) {
             case TAKE_THREE:
@@ -125,16 +117,11 @@ public class GameEngine {
         }
     }
 
-    // ── Execute: Take 3 different gems ───────────────────────────────
-
+    // Execute Action: Take 3 different gems
     private boolean executeTake3(Player player) {
-        Map<GemType, Integer> chosen;
-
-        if (player instanceof HumanPlayer) {
-            chosen = ui.promptTake3Gems(board, validator);
-            if (chosen == null) return false;
-        } else {
-            chosen = ((AIPlayer) player).chooseTake3Gems(board, validator);
+        Map<GemType, Integer> chosen = player.getLogic().chooseTake3Gems(player, board, validator);
+        if (chosen == null) {
+            return false;
         }
 
         board.takeGems(chosen);
@@ -144,18 +131,15 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Take 2 same colour ─────────────────────────────────
+    // Execute Action: Take 2 same colour gems
 
     private boolean executeTake2(Player player) {
-        GemType colour;
-
-        if (player instanceof HumanPlayer) {
-            colour = ui.promptTake2Gems(board, validator);
-            if (colour == null) return false;
-        } else {
-            colour = ((AIPlayer) player).chooseTake2Gems(board, validator);
+        GemType colour = player.getLogic().chooseTake2Gems(player, board, validator);
+        if (colour == null) {
+            return false;
         }
 
+        // map for enum gem type
         Map<GemType, Integer> toTake = new EnumMap<>(GemType.class);
         toTake.put(colour, 2);
         board.takeGems(toTake);
@@ -163,16 +147,11 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Reserve a card ──────────────────────────────────────
-
+    // Execute Action: Reserve a card
     private boolean executeReserve(Player player) {
-        int[] selection;
-
-        if (player instanceof HumanPlayer) {
-            selection = ui.promptReserveCard(player, board, validator);
-            if (selection == null) return false;
-        } else {
-            selection = ((AIPlayer) player).chooseReserveCard(board, validator);
+        int[] selection = player.getLogic().chooseReserveCard(player, board, validator);
+        if (selection == null) {
+            return false;
         }
 
         int level = selection[0];
@@ -198,16 +177,11 @@ public class GameEngine {
         return true;
     }
 
-    // ── Execute: Buy a card ──────────────────────────────────────────
-
+    // Execute Action: Buy a card
     private boolean executeBuy(Player player) {
-        Card card;
-
-        if (player instanceof HumanPlayer) {
-            card = ui.promptBuyCard(player, board, validator);
-            if (card == null) return false;
-        } else {
-            card = ((AIPlayer) player).chooseBuyCard(board, validator);
+        Card card = player.getLogic().chooseBuyCard(player, board, validator);
+        if (card == null) {
+            return false;
         }
 
         // Remove card from board if it's a visible card
@@ -222,8 +196,8 @@ public class GameEngine {
     }
 
     /**
-     * Removes a card from visible board slots if found.
-     * If the card is from the player's reserved list, buyCard() handles removal.
+     * Removes a card from visible board slots if found
+     * If the card is from the player's reserved list, buyCard() handles removal
      */
     private void removeCardFromBoard(Card card) {
         Card[][] visible = board.getVisibleCards();
@@ -237,21 +211,14 @@ public class GameEngine {
         }
     }
 
-    // ── Handle discard (over 10 gems) ────────────────────────────────
-
+    // Handle discard (if over 10 gems)
     private void handleDiscard(Player player) {
         int excess = player.getTotalGems() - 10;
         if (excess <= 0) {
             return;
         }
 
-        Map<GemType, Integer> toDiscard;
-
-        if (player instanceof HumanPlayer) {
-            toDiscard = ui.promptDiscardGems(player, excess);
-        } else {
-            toDiscard = ((AIPlayer) player).chooseDiscard(excess);
-        }
+        Map<GemType, Integer> toDiscard = player.getLogic().chooseDiscard(player, excess);
 
         for (Map.Entry<GemType, Integer> entry : toDiscard.entrySet()) {
             player.removeGem(entry.getKey(), entry.getValue());
@@ -259,7 +226,7 @@ public class GameEngine {
         board.returnGems(toDiscard);
     }
 
-    // ── Check noble visits ───────────────────────────────────────────
+    // Check noble visits
 
     private void checkNobles(Player player) {
         List<Noble> eligible = new ArrayList<>();
@@ -277,10 +244,8 @@ public class GameEngine {
         Noble chosen;
         if (eligible.size() == 1) {
             chosen = eligible.get(0);
-        } else if (player instanceof HumanPlayer) {
-            chosen = ui.promptNobleChoice(eligible);
-        } else {
-            chosen = ((AIPlayer) player).chooseNoble(eligible);
+        } else {        // player choose if multiple avail
+            chosen = player.getLogic().chooseNoble(player, eligible);
         }
 
         player.addNoble(chosen);

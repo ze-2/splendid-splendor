@@ -12,10 +12,10 @@ FAIL=0
 
 run_test() {
     echo "----------------------------------------"
-    OUTPUT=$(bash "test/$1" 2>&1)
-    echo "$OUTPUT"
-    PASSES=$(echo "$OUTPUT" | grep -c "\[PASS\]")
-    FAILS=$(echo "$OUTPUT" | grep -c "\[FAIL\]")
+    RESULT=$(bash "test/$1" 2>&1)
+    echo "$RESULT"
+    PASSES=$(echo "$RESULT" | grep -c "\[PASS\]")
+    FAILS=$(echo "$RESULT" | grep -c "\[FAIL\]")
     PASS=$((PASS + PASSES))
     FAIL=$((FAIL + FAILS))
     echo ""

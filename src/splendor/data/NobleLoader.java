@@ -1,10 +1,9 @@
 package splendor.data;
 
-import splendor.model.Noble;
-import splendor.model.GemType;
-
 import java.io.*;
 import java.util.*;
+import splendor.config.*;
+import splendor.model.*;
 
 public class NobleLoader {
 
@@ -15,12 +14,11 @@ public class NobleLoader {
     /**
      * Loads all noble tiles from CSV and prepares a shuffled list.
      * CSV format: prestige_points,ruby,emerald,sapphire,diamond,onyx
-     *
      * @throws FileNotFoundException if the CSV file cannot be found
      */
-    public NobleLoader() throws FileNotFoundException {
+    public NobleLoader(GameConfig config) throws FileNotFoundException {
 
-        File file = new File("data/nobles.csv");
+        File file = new File(config.getNobleDataPath());
         Scanner fr = new Scanner(file);
 
         fr.nextLine(); // skip header
@@ -55,7 +53,7 @@ public class NobleLoader {
     }
 
     /**
-     * Shuffles the available nobles list.
+     * Shuffles the available nobles list
      */
     public void shuffle() {
         Collections.shuffle(availNobles);
@@ -63,9 +61,7 @@ public class NobleLoader {
 
     /**
      * Selects numPlayers + 1 nobles for the game.
-     * Must be called after constructor (which already shuffled).
-     *
-     * @param numPlayers number of players in the game
+     * Must be called after constructor (which already shuffled)
      */
     public List<Noble> drawNobles(int numPlayers) {
         int count = numPlayers + 1;

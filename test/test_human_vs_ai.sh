@@ -1,16 +1,14 @@
 #!/bin/bash
 # Test: 1 Human + 1 AI — scripted human cycles through options 1,2,3
-# This exercises all human code paths (take gems, reserve, buy, discard, noble choice)
 cd "$(dirname "$0")/.."
+source test/check_output.sh
 
 echo "=== Test: Human vs AI (scripted) ==="
 
 bash compile.sh > /dev/null 2>&1
 
-# Generate scripted input
-# Setup: 2 players, "TestHuman" human, "TestAI" ai
-# Gameplay: cycle 1,2,3 to handle Take3 gem picks (must be different)
 {
+    echo "1"
     echo "2"
     echo "TestHuman"
     echo "human"
@@ -29,14 +27,14 @@ EXIT_CODE=$?
 echo "$OUTPUT" > test/output_human_vs_ai_raw.txt
 python3 test/merge_output.py test/output_human_vs_ai_raw.txt test/input_human_vs_ai.txt test/output_human_vs_ai.txt
 
-if [ $EXIT_CODE -eq 0 ] && echo "$OUTPUT" | grep -q "GAME OVER!"; then
+if [ $EXIT_CODE -eq 0 ] && check_game_complete "$OUTPUT"; then
     echo "[PASS] Human vs AI — game completed successfully"
-    if echo "$OUTPUT" | grep -q "wins with\|Shared victory"; then
+    if check_winner_declared "$OUTPUT"; then
         echo "[PASS] Winner declared correctly"
     else
         echo "[FAIL] No winner declaration found"
     fi
-    if echo "$OUTPUT" | grep -q "visited by a noble"; then
+    if check_noble_visit "$OUTPUT"; then
         echo "[INFO] Noble visit occurred during game"
     else
         echo "[INFO] No noble visits this game (may be normal)"

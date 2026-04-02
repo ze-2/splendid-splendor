@@ -1,6 +1,10 @@
 0
 5
 abc
+1
+0
+5
+abc
 2
 
 TestPlayer

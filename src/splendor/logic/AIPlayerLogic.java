@@ -12,7 +12,7 @@ import splendor.model.Card;
 import splendor.model.GemType;
 import splendor.model.Noble;
 import splendor.model.Player;
-
+// The logic is user researched with AI help in implementation. Code is checked through, refined, and debugged fully.
 public class AIPlayerLogic implements PlayerLogic {
 
     /* Current state of face up cards, updated every time chooseAction is called */

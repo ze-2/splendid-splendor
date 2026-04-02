@@ -172,10 +172,12 @@ public class ConsoleDisplayUI {
      * @param List<player> If equal prestige, lowest development card count wins.
      * If lowest development card count is equal, multiple winners.
      */
-    public void displayWinner(List<Player> winners) {
+    public void displayWinner(List<Player> winners, int roundsPlayed) {
         System.out.println();
         int boxWidth = 50;
         formatter.printBoxHeader("\u2605  G A M E   O V E R  \u2605", boxWidth);
+        System.out.printf("                %sRounds played: %d%s%n",
+                ConsoleFormatter.DIM, roundsPlayed, ConsoleFormatter.RESET);
         System.out.println();
 
         if (winners.size() == 1) {
@@ -196,6 +198,7 @@ public class ConsoleDisplayUI {
                         ConsoleFormatter.YELLOW, ConsoleFormatter.RESET, w.getName());
             }
         }
+
 
         System.out.println();
         formatter.printBoxFooter(boxWidth);

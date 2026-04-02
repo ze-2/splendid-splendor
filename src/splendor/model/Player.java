@@ -10,6 +10,8 @@ import java.util.Objects;
 
 import splendor.logic.*;
 
+// DISCLAIMER: Functions generated using AI were basic getters/setters, specifically getName(), getLogic(), getPurchasedCardCount(), addNoble().. etc, and were thoroughly reviewed. AI was also used in the process of development for debugging errors. 
+
 public class Player {
 
     private final String name;

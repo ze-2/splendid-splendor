@@ -1,0 +1,14 @@
+# Compiled class files
+*.class
+classes/
+
+# Package files
+*.jar
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store

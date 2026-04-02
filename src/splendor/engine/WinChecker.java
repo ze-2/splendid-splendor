@@ -4,7 +4,8 @@ import java.util.*;
 import splendor.model.*;
 
 public class WinChecker {
-    
+
+    // AI was used during the development to check for logic errors 
     public boolean hasTriggered(List<Player> players, int threshold) {
         for (Player p : players) {
             if (p.getPrestigePoints() >= threshold) {
